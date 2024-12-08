@@ -5,6 +5,11 @@ const Index = () => {
     <div className="min-h-screen bg-[#FFD700] relative overflow-hidden">
       {/* Browser-style header */}
       <div className="max-w-4xl mx-auto bg-[#FFF8DC] rounded-t-lg mt-4 p-2 border-2 border-black flex items-center animate-bounce">
+        <div className="flex space-x-2 absolute left-4">
+          <div className="w-3 h-3 rounded-full bg-red-500"></div>
+          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+        </div>
         <div className="flex-1 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-[#4169E1] to-[#87CEEB] text-transparent bg-clip-text" 
               style={{ 
@@ -21,7 +26,7 @@ const Index = () => {
       <div className="max-w-4xl mx-auto bg-[#FFD700] p-8 border-x-2 border-b-2 border-black">
         {/* Info boxes */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <Card className="bg-white border-2 border-black p-4 rounded-lg transform hover:scale-105 transition-transform duration-300">
+          <Card className="bg-white border-2 border-black p-4 rounded-lg transform hover:scale-105 transition-transform duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#4169E1] text-2xl font-bold mb-2 text-center animate-pulse" 
                 style={{ 
                   fontFamily: 'Comic Sans MS, cursive',
@@ -34,7 +39,7 @@ const Index = () => {
             </p>
           </Card>
 
-          <Card className="bg-white border-2 border-black p-4 rounded-lg transform hover:scale-105 transition-transform duration-300">
+          <Card className="bg-white border-2 border-black p-4 rounded-lg transform hover:scale-105 transition-transform duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#4169E1] text-2xl font-bold mb-2 text-center animate-pulse" 
                 style={{ 
                   fontFamily: 'Comic Sans MS, cursive',
@@ -42,8 +47,8 @@ const Index = () => {
                 }}>
               TOKEN ADDRESS
             </h2>
-            <p className="text-xl font-bold text-center" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
-              BXXMD.....8TMYS
+            <p className="text-xl font-bold text-center break-all" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+              0x65d8e44d6e126f9faf3433df36b0f9db3a55f9c0
             </p>
           </Card>
         </div>
@@ -66,7 +71,7 @@ const Index = () => {
                fontFamily: 'Comic Sans MS, cursive',
                textShadow: '1px 1px 0px rgba(0,0,0,0.2)'
              }}>
-            Crafted purely for fun, $TIMMI doesn't come with any real value or financial guarantees. With no formal team or plan, this coin is just a playful addition to the crypto scene. Trade at your own risk. Join in the fun and jump into the world of $Timmi!
+            $TIMMI is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only.
           </p>
         </div>
 
