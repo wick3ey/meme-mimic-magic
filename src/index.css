@@ -72,11 +72,23 @@
   }
 
   * {
-    @apply border-border font-['Hitchcut'];
+    @apply border-border;
+    font-family: 'Hitchcut', system-ui, -apple-system, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.02em;
   }
 
   body {
-    @apply bg-background text-foreground font-['Hitchcut'];
+    @apply bg-background text-foreground;
+    font-family: 'Hitchcut', system-ui, -apple-system, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hitchcut', system-ui, -apple-system, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.02em;
   }
 }
 

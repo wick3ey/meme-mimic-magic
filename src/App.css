@@ -7,6 +7,15 @@
   overflow-x: hidden;
 }
 
+/* Text styling */
+.text-chunky {
+  font-family: 'Hitchcut', system-ui, -apple-system, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
 /* Smooth hover transitions */
 .hover-scale {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
