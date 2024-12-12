@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Twitter, MessageCircle } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
+import { PfpGenerator } from '@/components/PfpGenerator';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -38,6 +39,11 @@ const Index = () => {
             </h1>
           </div>
         </div>
+      </div>
+
+      {/* PFP Generator Section */}
+      <div className="max-w-5xl mx-auto mt-8 relative z-20">
+        <PfpGenerator />
       </div>
 
       {/* Main Content */}
