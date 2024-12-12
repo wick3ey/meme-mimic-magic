@@ -92,14 +92,17 @@ const Index = () => {
 
         {/* Buy Button */}
         <div className="relative z-20 mb-12">
-          <button 
+          <a 
+            href="https://pump.fun/coin/2jqmPF7p4TjAfVwHoxxgNzTGW89VBT3GN3vTDG2zpump"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full max-w-md mx-auto block bg-[#F97316] text-white text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-[#EA580C] transition-all duration-300 border-4 border-black transform-none hover:translate-y-[-8px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" 
             style={{ 
               WebkitTextStroke: '1.5px black',
               textShadow: '3px 3px 0px rgba(0,0,0,0.2)',
             }}>
             BUY $PCAT
-          </button>
+          </a>
         </div>
 
         {/* Disclaimer */}
