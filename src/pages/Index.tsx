@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Twitter, Telegram } from 'lucide-react';
+import { Twitter, MessageCircle } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
 
@@ -133,7 +133,7 @@ const Index = () => {
             onClick={() => handleSocialClick(false)}
             className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
           >
-            <Telegram className="w-8 h-8 text-[#0088cc]" />
+            <MessageCircle className="w-8 h-8 text-[#0088cc]" />
           </button>
         </div>
 
