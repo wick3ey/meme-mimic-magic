@@ -122,18 +122,22 @@ const Index = () => {
 
         {/* Social Links */}
         <div className="fixed bottom-8 right-8 z-30 flex gap-4">
-          <button 
-            onClick={() => handleSocialClick(false)}
+          <a 
+            href="https://x.com/peachcatso"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
           >
             <Twitter className="w-8 h-8 text-[#1DA1F2]" />
-          </button>
-          <button 
-            onClick={() => handleSocialClick(false)}
+          </a>
+          <a 
+            href="https://t.me/peachcatso"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
           >
             <MessageCircle className="w-8 h-8 text-[#0088cc]" />
-          </button>
+          </a>
         </div>
 
         {/* Decorative Elements */}
