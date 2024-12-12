@@ -95,8 +95,8 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Decorative elements - Improved positioning and responsiveness */}
-        <div className="hidden md:block absolute left-4 top-1/4 transform -translate-y-1/2 z-0">
+        {/* Decorative elements - Repositioned to avoid overlap */}
+        <div className="hidden md:block absolute left-[-50px] top-[20%] transform -translate-y-1/2 z-0">
           <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-12deg] animate-bounce">
             <p className="text-xl text-[#F97316]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
               🍑 Peach Power! 
@@ -104,7 +104,7 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="hidden md:block absolute right-4 top-3/4 transform -translate-y-1/2 z-0">
+        <div className="hidden md:block absolute right-[-50px] bottom-[10%] transform -translate-y-1/2 z-0">
           <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[12deg] animate-float">
             <p className="text-xl text-[#F97316]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
               😺 Meow to the Moon!
