@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Noot';
+  font-family: 'Hitchcut';
   src: url('/lovable-uploads/e2e6f4c2-6f0d-45af-ae91-3616a308351b.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -72,11 +72,11 @@
   }
 
   * {
-    @apply border-border font-['Noot'];
+    @apply border-border font-['Hitchcut'];
   }
 
   body {
-    @apply bg-background text-foreground font-['Noot'];
+    @apply bg-background text-foreground font-['Hitchcut'];
   }
 }
 
