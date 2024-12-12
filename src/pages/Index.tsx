@@ -1,4 +1,23 @@
+import { useState } from 'react';
+import { Twitter, Telegram } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { toast } from "sonner";
+
 const Index = () => {
+  const [showComingSoon, setShowComingSoon] = useState(false);
+  const placeholderAddress = "XXX";
+
+  const handleCopyAddress = () => {
+    navigator.clipboard.writeText(placeholderAddress);
+    toast.success("Token address copied to clipboard!");
+  };
+
+  const handleSocialClick = (hasLink: boolean) => {
+    if (!hasLink) {
+      setShowComingSoon(true);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FDE1D3] via-[#FEC6A1] to-[#FFB088] relative overflow-hidden p-4">
       {/* Header Section */}
@@ -54,14 +73,23 @@ const Index = () => {
                 }}>
               TOKEN ADDRESS
             </h2>
-            <p className="text-xl sm:text-2xl font-bold text-center break-all text-[#F97316]" 
-               style={{ 
-                 fontFamily: 'Comic Sans MS, cursive',
-                 WebkitTextStroke: '1px black',
-                 textShadow: '2px 2px 0px rgba(0,0,0,0.1)',
-               }}>
-              BXXMD....8TMYS
-            </p>
+            <div className="flex items-center justify-center gap-2">
+              <p className="text-xl sm:text-2xl font-bold text-center text-[#F97316] cursor-pointer" 
+                 onClick={handleCopyAddress}
+                 style={{ 
+                   fontFamily: 'Comic Sans MS, cursive',
+                   WebkitTextStroke: '1px black',
+                   textShadow: '2px 2px 0px rgba(0,0,0,0.1)',
+                 }}>
+                {placeholderAddress}
+              </p>
+              <button 
+                onClick={handleCopyAddress}
+                className="bg-[#8B5CF6] text-white px-3 py-1 rounded-lg hover:bg-[#7C3AED] transition-colors text-sm font-bold border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+              >
+                Copy
+              </button>
+            </div>
           </div>
         </div>
 
@@ -88,14 +116,29 @@ const Index = () => {
                  lineHeight: '1.6',
                  textShadow: '1px 1px 0px rgba(0,0,0,0.1)',
                }}>
-              $PEACHCAT is a meme coin with no intrinsic value or financial expectations. 
-              There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only.
+              $PEACHCAT is fully community-driven and thrives on good vibes and memes. There's no team, no roadmap—just a group of people having fun together. Remember, it's not financial advice; it's just pure entertainment and chaos in coin form!
             </p>
           </div>
         </div>
 
+        {/* Social Links */}
+        <div className="fixed bottom-8 right-8 z-30 flex gap-4">
+          <button 
+            onClick={() => handleSocialClick(false)}
+            className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
+          >
+            <Twitter className="w-8 h-8 text-[#1DA1F2]" />
+          </button>
+          <button 
+            onClick={() => handleSocialClick(false)}
+            className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
+          >
+            <Telegram className="w-8 h-8 text-[#0088cc]" />
+          </button>
+        </div>
+
         {/* Decorative Elements */}
-        <div className="hidden lg:block fixed left-8 top-[30%] z-10">
+        <div className="fixed left-8 top-[30%] z-10 hidden lg:block">
           <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-12deg] animate-bounce">
             <p className="text-2xl text-[#F97316]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
               🍑 Peach Power! 
@@ -103,7 +146,7 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block fixed right-8 bottom-[20%] z-10">
+        <div className="fixed right-8 top-[70%] z-10 hidden lg:block">
           <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[12deg] animate-float">
             <p className="text-2xl text-[#F97316]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
               😺 Meow to the Moon!
@@ -118,6 +161,20 @@ const Index = () => {
           ©2024 Peachcat. All Rights Reserved.
         </p>
       </div>
+
+      {/* Coming Soon Dialog */}
+      <Dialog open={showComingSoon} onOpenChange={setShowComingSoon}>
+        <DialogContent className="bg-white border-4 border-black rounded-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-[#F97316] text-center" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+              Coming Soon! 🚀
+            </DialogTitle>
+          </DialogHeader>
+          <p className="text-xl text-center text-[#1A1F2C]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+            Stay tuned! Our social channels are launching soon.
+          </p>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
