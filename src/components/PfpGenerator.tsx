@@ -99,7 +99,7 @@ export const PfpGenerator = () => {
                 value={[scale * 100]}
                 onValueChange={(value) => setScale(value[0] / 100)}
                 min={50}
-                max={150}
+                max={300}
                 step={1}
               />
             </div>
