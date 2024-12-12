@@ -20,7 +20,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#FDE1D3] via-[#FEC6A1] to-[#FFB088] relative overflow-hidden p-4">
+    <div className="min-h-screen bg-[#ffdab9] relative overflow-hidden p-4">
       {/* Header Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="bg-white rounded-2xl mt-8 p-6 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-y-[-4px] transition-all duration-300">
