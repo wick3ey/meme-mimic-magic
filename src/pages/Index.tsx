@@ -31,7 +31,6 @@ const Index = () => {
             />
             <h1 className="text-5xl sm:text-6xl font-bold text-[#F97316] tracking-tight" 
                 style={{ 
-                  fontFamily: 'Comic Sans MS, cursive',
                   WebkitTextStroke: '2px black',
                   textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
                 }}>
@@ -48,7 +47,6 @@ const Index = () => {
           <div className="bg-white border-4 border-black p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center" 
                 style={{ 
-                  fontFamily: 'Comic Sans MS, cursive',
                   WebkitTextStroke: '1.5px black',
                   textShadow: '3px 3px 0px rgba(0,0,0,0.1)',
                 }}>
@@ -56,7 +54,6 @@ const Index = () => {
             </h2>
             <p className="text-4xl sm:text-5xl font-bold text-center text-[#F97316]" 
                style={{ 
-                 fontFamily: 'Comic Sans MS, cursive',
                  WebkitTextStroke: '1.5px black',
                  textShadow: '3px 3px 0px rgba(0,0,0,0.1)',
                }}>
@@ -67,7 +64,6 @@ const Index = () => {
           <div className="bg-white border-4 border-black p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center" 
                 style={{ 
-                  fontFamily: 'Comic Sans MS, cursive',
                   WebkitTextStroke: '1.5px black',
                   textShadow: '3px 3px 0px rgba(0,0,0,0.1)',
                 }}>
@@ -77,7 +73,6 @@ const Index = () => {
               <p className="text-xl sm:text-2xl font-bold text-center text-[#F97316] cursor-pointer" 
                  onClick={handleCopyAddress}
                  style={{ 
-                   fontFamily: 'Comic Sans MS, cursive',
                    WebkitTextStroke: '1px black',
                    textShadow: '2px 2px 0px rgba(0,0,0,0.1)',
                  }}>
@@ -98,7 +93,6 @@ const Index = () => {
           <button 
             className="w-full max-w-md mx-auto block bg-[#F97316] text-white text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-[#EA580C] transition-all duration-300 border-4 border-black transform-none hover:translate-y-[-8px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" 
             style={{ 
-              fontFamily: 'Comic Sans MS, cursive',
               WebkitTextStroke: '1.5px black',
               textShadow: '3px 3px 0px rgba(0,0,0,0.2)',
             }}>
@@ -111,7 +105,6 @@ const Index = () => {
           <div className="bg-white border-4 border-black rounded-2xl p-6 sm:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300">
             <p className="text-xl sm:text-2xl text-center" 
                style={{ 
-                 fontFamily: 'Comic Sans MS, cursive',
                  color: '#1A1F2C',
                  lineHeight: '1.6',
                  textShadow: '1px 1px 0px rgba(0,0,0,0.1)',
@@ -140,7 +133,7 @@ const Index = () => {
         {/* Decorative Elements */}
         <div className="fixed left-8 top-[30%] z-10 hidden lg:block">
           <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-12deg] animate-bounce">
-            <p className="text-2xl text-[#F97316]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+            <p className="text-2xl text-[#F97316]">
               🍑 Peach Power! 
             </p>
           </div>
@@ -148,7 +141,7 @@ const Index = () => {
 
         <div className="fixed right-8 top-[70%] z-10 hidden lg:block">
           <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[12deg] animate-float">
-            <p className="text-2xl text-[#F97316]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+            <p className="text-2xl text-[#F97316]">
               😺 Meow to the Moon!
             </p>
           </div>
@@ -157,7 +150,7 @@ const Index = () => {
 
       {/* Footer */}
       <div className="text-center py-8 relative z-20">
-        <p className="text-xl text-[#1A1F2C]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+        <p className="text-xl text-[#1A1F2C]">
           ©2024 Peachcat. All Rights Reserved.
         </p>
       </div>
@@ -166,11 +159,11 @@ const Index = () => {
       <Dialog open={showComingSoon} onOpenChange={setShowComingSoon}>
         <DialogContent className="bg-white border-4 border-black rounded-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-bold text-[#F97316] text-center" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+            <DialogTitle className="text-3xl font-bold text-[#F97316] text-center">
               Coming Soon! 🚀
             </DialogTitle>
           </DialogHeader>
-          <p className="text-xl text-center text-[#1A1F2C]" style={{ fontFamily: 'Comic Sans MS, cursive' }}>
+          <p className="text-xl text-center text-[#1A1F2C]">
             Stay tuned! Our social channels are launching soon.
           </p>
         </DialogContent>
