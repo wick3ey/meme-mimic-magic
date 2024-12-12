@@ -6,10 +6,11 @@ import { PfpGenerator } from '@/components/PfpGenerator';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
-  const placeholderAddress = "XXX";
+  const fullAddress = "2jqmPF7p4TjAfVwHoxxgNzTGW89VBT3GN3vTDG2zpump";
+  const displayAddress = `${fullAddress.slice(0, 4)}...${fullAddress.slice(-4)}`;
 
   const handleCopyAddress = () => {
-    navigator.clipboard.writeText(placeholderAddress);
+    navigator.clipboard.writeText(fullAddress);
     toast.success("Token address copied to clipboard!");
   };
 
@@ -77,7 +78,7 @@ const Index = () => {
                    WebkitTextStroke: '1px black',
                    textShadow: '2px 2px 0px rgba(0,0,0,0.1)',
                  }}>
-                {placeholderAddress}
+                {displayAddress}
               </p>
               <button 
                 onClick={handleCopyAddress}
