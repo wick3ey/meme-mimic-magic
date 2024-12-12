@@ -97,7 +97,7 @@ const Index = () => {
               WebkitTextStroke: '1.5px black',
               textShadow: '3px 3px 0px rgba(0,0,0,0.2)',
             }}>
-            BUY $PEACHCAT
+            BUY $PCAT
           </button>
         </div>
 
