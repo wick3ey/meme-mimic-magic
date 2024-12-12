@@ -41,11 +41,6 @@ const Index = () => {
         </div>
       </div>
 
-      {/* PFP Generator Section */}
-      <div className="max-w-5xl mx-auto mt-8 relative z-20">
-        <PfpGenerator />
-      </div>
-
       {/* Main Content */}
       <div className="max-w-5xl mx-auto p-4 sm:p-8 mt-8 relative z-20">
         {/* Info Cards */}
@@ -118,6 +113,11 @@ const Index = () => {
               $PEACHCAT is fully community-driven and thrives on good vibes and memes. There's no team, no roadmap—just a group of people having fun together. Remember, it's not financial advice; it's just pure entertainment and chaos in coin form!
             </p>
           </div>
+        </div>
+
+        {/* PFP Generator Section - Now positioned at the bottom */}
+        <div className="mt-16">
+          <PfpGenerator />
         </div>
 
         {/* Social Links */}

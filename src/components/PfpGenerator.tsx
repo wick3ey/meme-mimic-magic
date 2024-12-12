@@ -14,24 +14,24 @@ export const PfpGenerator = () => {
 
   const handleGeneratePfp = () => {
     setShowControls(true);
-    toast.success("Tomteluva tillagd! Justera position och storlek.");
+    toast.success("Hat added! Adjust position and size.");
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-4 space-y-6">
+    <div className="max-w-lg mx-auto p-4 space-y-6">
       <div className="relative w-full aspect-square bg-white rounded-xl overflow-hidden border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-        {/* Basbilden (katten) */}
+        {/* Base image (cat) */}
         <img 
           src="/lovable-uploads/e110e57f-74f5-4210-9cb5-a9a071ff1ade.png" 
           alt="Cat base" 
           className="w-full h-full object-cover"
         />
         
-        {/* Tomteluvan */}
+        {/* Hat overlay */}
         {showControls && (
           <img 
             src={selectedHat === 'hat1' ? "/lovable-uploads/8a03f679-f64c-479b-a1f0-b32b0bf403bb.png" : "/lovable-uploads/92af570a-3f52-45d7-a15b-d21492910d35.png"}
-            alt="Santa hat"
+            alt="Hat"
             className="absolute pointer-events-none"
             style={{
               left: `${position.x}%`,
@@ -47,7 +47,7 @@ export const PfpGenerator = () => {
       <div className="space-y-6 bg-white p-6 rounded-xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
         {!showControls ? (
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-center">Välj tomteluva</h3>
+            <h3 className="text-2xl font-bold text-center">Choose Hat</h3>
             <RadioGroup 
               defaultValue="hat1" 
               onValueChange={(value) => setSelectedHat(value)}
@@ -55,18 +55,18 @@ export const PfpGenerator = () => {
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="hat1" id="hat1" />
-                <Label htmlFor="hat1">Stickad luva</Label>
+                <Label htmlFor="hat1">WIF</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="hat2" id="hat2" />
-                <Label htmlFor="hat2">Klassisk luva</Label>
+                <Label htmlFor="hat2">Santa Hat</Label>
               </div>
             </RadioGroup>
             <Button 
               onClick={handleGeneratePfp} 
               className="w-full"
             >
-              Generera PFP
+              Generate PFP
             </Button>
           </div>
         ) : (
@@ -94,7 +94,7 @@ export const PfpGenerator = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Storlek</h4>
+              <h4 className="font-medium">Size</h4>
               <Slider
                 value={[scale * 100]}
                 onValueChange={(value) => setScale(value[0] / 100)}
@@ -120,7 +120,7 @@ export const PfpGenerator = () => {
               variant="outline" 
               className="w-full"
             >
-              Börja om
+              Start Over
             </Button>
           </div>
         )}
