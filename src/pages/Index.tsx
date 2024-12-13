@@ -24,20 +24,20 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Main Content Area with New Background Color */}
+        {/* Main Content Area */}
         <div className="bg-[#FF7F7F] p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-0">
           {/* Header Section */}
           <div className="max-w-5xl mx-auto relative z-20">
             <div className="bg-white bg-opacity-20 rounded-2xl p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <img 
-                  src="/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png" 
+                  src="/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png" 
                   alt="Grokmas" 
                   className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] animate-bounce-slow"
                 />
                 <h1 className="text-5xl sm:text-7xl font-bold tracking-tight animate-float text-white" 
                     style={{ 
-                      textShadow: '8px 8px 0px rgba(0,0,0,0.4)',
+                      textShadow: '6px 6px 0px rgba(0, 0, 0, 0.4)',
                       letterSpacing: '4px'
                     }}>
                   GROKMAS
@@ -46,21 +46,21 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Info Card */}
+          {/* Token Address */}
           <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 sm:gap-8 mt-8">
             <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
                   style={{ 
-                    textShadow: '6px 6px 0px rgba(0,0,0,0.4)',
+                    textShadow: '6px 6px 0px rgba(0, 0, 0, 0.4)',
                     letterSpacing: '2px'
                   }}>
-                TOTAL SUPPLY
+                TOKEN ADDRESS
               </h2>
-              <p className="text-4xl sm:text-5xl font-bold text-center text-white" 
+              <p className="text-2xl sm:text-3xl font-bold text-center text-white" 
                  style={{ 
                    textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
                  }}>
-                1,000,000,000
+                xxx
               </p>
             </div>
           </div>
@@ -79,22 +79,58 @@ const Index = () => {
             </a>
           </div>
 
-          {/* Disclaimer */}
-          <div className="max-w-3xl mx-auto relative z-20">
-            <div className="bg-white bg-opacity-20 border-4 border-black rounded-2xl p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)] hover:translate-y-[-4px] transition-all duration-300">
-              <p className="text-xl sm:text-2xl text-center text-black font-bold" 
-                 style={{ 
-                   lineHeight: '1.6',
-                   textShadow: '2px 2px 0px rgba(255,255,255,0.5)',
-                 }}>
-                $GROKMAS is fully community-driven and thrives on good vibes and memes. There's no team, no roadmap—just a group of people having fun together. Remember, it's not financial advice; it's just pure entertainment and chaos in coin form!
-              </p>
-            </div>
-          </div>
-
           {/* PFP Generator Section */}
           <div className="mt-16">
             <PfpGenerator />
+          </div>
+
+          {/* How to Buy Guide */}
+          <div className="max-w-4xl mx-auto mt-16 bg-white bg-opacity-20 rounded-2xl p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
+            <h2 className="text-4xl font-bold mb-8 text-center text-white"
+                style={{ 
+                  textShadow: '6px 6px 0px rgba(0, 0, 0, 0.4)',
+                  letterSpacing: '2px'
+                }}>
+              HOW TO BUY $GMAS
+            </h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white bg-opacity-20 rounded-xl p-6 border-4 border-black">
+                <h3 className="text-2xl font-bold mb-4 text-white"
+                    style={{ 
+                      textShadow: '4px 4px 0px rgba(0, 0, 0, 0.4)',
+                    }}>
+                  Step 1: Get SOL from a CEX
+                </h3>
+                <p className="text-lg text-white font-bold">
+                  Purchase SOL from your preferred exchange (Binance, Coinbase, etc.). Make sure to buy enough to cover your desired $GMAS purchase plus transaction fees.
+                </p>
+              </div>
+
+              <div className="bg-white bg-opacity-20 rounded-xl p-6 border-4 border-black">
+                <h3 className="text-2xl font-bold mb-4 text-white"
+                    style={{ 
+                      textShadow: '4px 4px 0px rgba(0, 0, 0, 0.4)',
+                    }}>
+                  Step 2: Transfer to Phantom
+                </h3>
+                <p className="text-lg text-white font-bold">
+                  Download Phantom Wallet, create an account, and copy your wallet address. Withdraw your SOL from the exchange to your Phantom wallet address.
+                </p>
+              </div>
+
+              <div className="bg-white bg-opacity-20 rounded-xl p-6 border-4 border-black">
+                <h3 className="text-2xl font-bold mb-4 text-white"
+                    style={{ 
+                      textShadow: '4px 4px 0px rgba(0, 0, 0, 0.4)',
+                    }}>
+                  Step 3: Swap for $GMAS
+                </h3>
+                <p className="text-lg text-white font-bold">
+                  Open Phantom app, tap the swap feature, and either search for "$GMAS" or paste the token address. Enter the amount of SOL you want to swap, review the transaction, and confirm!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

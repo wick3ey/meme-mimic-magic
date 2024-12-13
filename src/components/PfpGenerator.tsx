@@ -1,13 +1,9 @@
 import { useState, useRef } from 'react';
-import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Download } from 'lucide-react';
 
 export const PfpGenerator = () => {
-  const [position, setPosition] = useState({ x: 50, y: 0 });
-  const [scale, setScale] = useState(1);
-  const [rotation, setRotation] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleDownload = async () => {
@@ -26,12 +22,11 @@ export const PfpGenerator = () => {
 
       const baseImage = new Image();
       baseImage.crossOrigin = "anonymous";
-      baseImage.src = "/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png";
+      baseImage.src = "/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png";
       
       baseImage.onload = () => {
         ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
         
-        // Create download link
         const dataUrl = canvas.toDataURL('image/png');
         const link = document.createElement('a');
         link.download = 'grokmas-pfp.png';
@@ -55,7 +50,7 @@ export const PfpGenerator = () => {
         className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-xl overflow-hidden border-4 border-[#DC2626] shadow-[8px_8px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
-          src="/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png" 
+          src="/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png" 
           alt="Grokmas base" 
           className="w-full h-full object-cover"
         />
