@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
 import { PfpGenerator } from '@/components/PfpGenerator';
+import { CreditCard, Wallet } from 'lucide-react';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -85,48 +86,52 @@ const Index = () => {
           </div>
 
           {/* How to Buy Guide */}
-          <div className="max-w-4xl mx-auto mt-16 bg-white bg-opacity-20 rounded-2xl p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
+          <div className="max-w-4xl mx-auto mt-16 bg-[#1A1F2C] rounded-2xl p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
             <h2 className="text-4xl font-bold mb-8 text-center text-white"
                 style={{ 
-                  textShadow: '6px 6px 0px rgba(0, 0, 0, 0.4)',
+                  textShadow: 'none',
                   letterSpacing: '2px'
                 }}>
               HOW TO BUY $GMAS
             </h2>
             
             <div className="space-y-8">
-              <div className="bg-white bg-opacity-20 rounded-xl p-6 border-4 border-black">
-                <h3 className="text-2xl font-bold mb-4 text-white"
-                    style={{ 
-                      textShadow: '4px 4px 0px rgba(0, 0, 0, 0.4)',
-                    }}>
-                  Step 1: Get SOL from a CEX
-                </h3>
-                <p className="text-lg text-white font-bold">
+              <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <CreditCard className="w-8 h-8 text-white" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Step 1: Get SOL from a CEX
+                  </h3>
+                </div>
+                <p className="text-lg text-white">
                   Purchase SOL from your preferred exchange (Binance, Coinbase, etc.). Make sure to buy enough to cover your desired $GMAS purchase plus transaction fees.
                 </p>
               </div>
 
-              <div className="bg-white bg-opacity-20 rounded-xl p-6 border-4 border-black">
-                <h3 className="text-2xl font-bold mb-4 text-white"
-                    style={{ 
-                      textShadow: '4px 4px 0px rgba(0, 0, 0, 0.4)',
-                    }}>
-                  Step 2: Transfer to Phantom
-                </h3>
-                <p className="text-lg text-white font-bold">
+              <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <Wallet className="w-8 h-8 text-white" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Step 2: Transfer to Phantom
+                  </h3>
+                </div>
+                <p className="text-lg text-white">
                   Download Phantom Wallet, create an account, and copy your wallet address. Withdraw your SOL from the exchange to your Phantom wallet address.
                 </p>
               </div>
 
-              <div className="bg-white bg-opacity-20 rounded-xl p-6 border-4 border-black">
-                <h3 className="text-2xl font-bold mb-4 text-white"
-                    style={{ 
-                      textShadow: '4px 4px 0px rgba(0, 0, 0, 0.4)',
-                    }}>
-                  Step 3: Swap for $GMAS
-                </h3>
-                <p className="text-lg text-white font-bold">
+              <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <img 
+                    src="/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png" 
+                    alt="Grokmas" 
+                    className="w-8 h-8"
+                  />
+                  <h3 className="text-2xl font-bold text-white">
+                    Step 3: Swap for $GMAS
+                  </h3>
+                </div>
+                <p className="text-lg text-white">
                   Open Phantom app, tap the swap feature, and either search for "$GMAS" or paste the token address. Enter the amount of SOL you want to swap, review the transaction, and confirm!
                 </p>
               </div>
