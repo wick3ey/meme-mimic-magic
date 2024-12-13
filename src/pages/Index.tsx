@@ -36,7 +36,7 @@ const Index = () => {
               className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
             >
               <img 
-                src="/lovable-uploads/92af570a-3f52-45d7-a15b-d21492910d35.png" 
+                src="/lovable-uploads/dffee0b9-4010-4246-b01b-aa9d9d0649db.png" 
                 alt="Twitter" 
                 className="w-8 h-8"
               />
@@ -48,7 +48,7 @@ const Index = () => {
               className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
             >
               <img 
-                src="/lovable-uploads/8a03f679-f64c-479b-a1f0-b32b0bf403bb.png" 
+                src="/lovable-uploads/58335b9a-c0a5-48e8-b516-701dec326399.png" 
                 alt="Telegram" 
                 className="w-8 h-8"
               />
