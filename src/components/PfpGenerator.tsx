@@ -37,7 +37,7 @@ export const PfpGenerator = () => {
       const dataUrl = await new Promise<string>((resolve) => {
         const baseImage = new Image();
         baseImage.crossOrigin = "anonymous";
-        baseImage.src = "/lovable-uploads/e110e57f-74f5-4210-9cb5-a9a071ff1ade.png";
+        baseImage.src = "/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png";
         
         baseImage.onload = () => {
           ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
@@ -74,7 +74,7 @@ export const PfpGenerator = () => {
 
       // Create download link
       const link = document.createElement('a');
-      link.download = 'peachcat-pfp.png';
+      link.download = 'grokmas-pfp.png';
       link.href = dataUrl;
       document.body.appendChild(link);
       link.click();
@@ -91,12 +91,12 @@ export const PfpGenerator = () => {
     <div className="max-w-lg mx-auto p-4 space-y-6">
       <div 
         ref={containerRef}
-        className="relative w-full aspect-square bg-white rounded-xl overflow-hidden border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+        className="relative w-full aspect-square bg-[#222222] rounded-xl overflow-hidden border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
       >
-        {/* Base image (cat) */}
+        {/* Base image */}
         <img 
-          src="/lovable-uploads/e110e57f-74f5-4210-9cb5-a9a071ff1ade.png" 
-          alt="Cat base" 
+          src="/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png" 
+          alt="Grokmas base" 
           className="w-full h-full object-cover"
         />
         
@@ -117,10 +117,10 @@ export const PfpGenerator = () => {
         )}
       </div>
 
-      <div className="space-y-6 bg-white p-6 rounded-xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+      <div className="space-y-6 bg-[#222222] p-6 rounded-xl border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
         {!showControls ? (
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-center">Choose Hat</h3>
+            <h3 className="text-2xl font-bold text-center text-[#8B5CF6]">Choose Hat</h3>
             <RadioGroup 
               defaultValue="hat1" 
               onValueChange={(value) => setSelectedHat(value)}
@@ -128,16 +128,16 @@ export const PfpGenerator = () => {
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="hat1" id="hat1" />
-                <Label htmlFor="hat1">WIF</Label>
+                <Label htmlFor="hat1" className="text-[#8B5CF6]">WIF</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="hat2" id="hat2" />
-                <Label htmlFor="hat2">Santa Hat</Label>
+                <Label htmlFor="hat2" className="text-[#8B5CF6]">Santa Hat</Label>
               </div>
             </RadioGroup>
             <Button 
               onClick={handleGeneratePfp} 
-              className="w-full"
+              className="w-full bg-[#8B5CF6] hover:bg-[#7C3AED] text-white border-2 border-[#403E43]"
             >
               Generate PFP
             </Button>
@@ -145,46 +145,50 @@ export const PfpGenerator = () => {
         ) : (
           <div className="space-y-6">
             <div className="space-y-4">
-              <h4 className="font-medium">X-Position</h4>
+              <h4 className="font-medium text-[#8B5CF6]">X-Position</h4>
               <Slider
                 value={[position.x]}
                 onValueChange={(value) => setPosition(prev => ({ ...prev, x: value[0] }))}
                 min={0}
                 max={100}
                 step={1}
+                className="text-[#8B5CF6]"
               />
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Y-Position</h4>
+              <h4 className="font-medium text-[#8B5CF6]">Y-Position</h4>
               <Slider
                 value={[position.y]}
                 onValueChange={(value) => setPosition(prev => ({ ...prev, y: value[0] }))}
                 min={0}
                 max={100}
                 step={1}
+                className="text-[#8B5CF6]"
               />
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Size</h4>
+              <h4 className="font-medium text-[#8B5CF6]">Size</h4>
               <Slider
                 value={[scale * 100]}
                 onValueChange={(value) => setScale(value[0] / 100)}
                 min={50}
                 max={300}
                 step={1}
+                className="text-[#8B5CF6]"
               />
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Rotation</h4>
+              <h4 className="font-medium text-[#8B5CF6]">Rotation</h4>
               <Slider
                 value={[rotation]}
                 onValueChange={(value) => setRotation(value[0])}
                 min={-180}
                 max={180}
                 step={1}
+                className="text-[#8B5CF6]"
               />
             </div>
 
@@ -192,13 +196,13 @@ export const PfpGenerator = () => {
               <Button 
                 onClick={() => setShowControls(false)} 
                 variant="outline" 
-                className="flex-1"
+                className="flex-1 bg-transparent border-[#403E43] text-[#8B5CF6] hover:bg-[#403E43]"
               >
                 Start Over
               </Button>
               <Button 
                 onClick={handleDownload}
-                className="flex-1 gap-2"
+                className="flex-1 gap-2 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white border-2 border-[#403E43]"
               >
                 <Download className="w-4 h-4" />
                 Download

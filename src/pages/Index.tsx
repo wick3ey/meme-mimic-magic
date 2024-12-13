@@ -21,22 +21,22 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#ffdab9] relative overflow-hidden p-4">
+    <div className="min-h-screen bg-[#1A1F2C] relative overflow-hidden p-4">
       {/* Header Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-        <div className="bg-white rounded-2xl mt-8 p-6 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-y-[-4px] transition-all duration-300">
+        <div className="bg-[#222222] rounded-2xl mt-8 p-6 sm:p-8 border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-y-[-4px] transition-all duration-300">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative">
             <img 
-              src="/lovable-uploads/67a6faaf-2575-4041-b82d-5011400a44af.png" 
-              alt="Peachcat" 
-              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-bounce"
+              src="/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png" 
+              alt="Grokmas" 
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-bounce"
             />
-            <h1 className="text-5xl sm:text-6xl font-bold text-[#F97316] tracking-tight" 
+            <h1 className="text-5xl sm:text-6xl font-bold text-[#8B5CF6] tracking-tight" 
                 style={{ 
                   WebkitTextStroke: '2px black',
                   textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
                 }}>
-              PEACHCAT
+              GROKMAS
             </h1>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Index = () => {
       <div className="max-w-5xl mx-auto p-4 sm:p-8 mt-8 relative z-20">
         {/* Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
-          <div className="bg-white border-4 border-black p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+          <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center" 
                 style={{ 
                   WebkitTextStroke: '1.5px black',
@@ -54,7 +54,7 @@ const Index = () => {
                 }}>
               TOTAL SUPPLY
             </h2>
-            <p className="text-4xl sm:text-5xl font-bold text-center text-[#F97316]" 
+            <p className="text-4xl sm:text-5xl font-bold text-center text-[#8B5CF6]" 
                style={{ 
                  WebkitTextStroke: '1.5px black',
                  textShadow: '3px 3px 0px rgba(0,0,0,0.1)',
@@ -63,7 +63,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="bg-white border-4 border-black p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+          <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center" 
                 style={{ 
                   WebkitTextStroke: '1.5px black',
@@ -72,7 +72,7 @@ const Index = () => {
               TOKEN ADDRESS
             </h2>
             <div className="flex items-center justify-center gap-2">
-              <p className="text-xl sm:text-2xl font-bold text-center text-[#F97316] cursor-pointer" 
+              <p className="text-xl sm:text-2xl font-bold text-center text-[#8B5CF6] cursor-pointer" 
                  onClick={handleCopyAddress}
                  style={{ 
                    WebkitTextStroke: '1px black',
@@ -82,7 +82,7 @@ const Index = () => {
               </p>
               <button 
                 onClick={handleCopyAddress}
-                className="bg-[#8B5CF6] text-white px-3 py-1 rounded-lg hover:bg-[#7C3AED] transition-colors text-sm font-bold border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+                className="bg-[#8B5CF6] text-white px-3 py-1 rounded-lg hover:bg-[#7C3AED] transition-colors text-sm font-bold border-2 border-[#403E43] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
               >
                 Copy
               </button>
@@ -96,30 +96,29 @@ const Index = () => {
             href="https://pump.fun/coin/2jqmPF7p4TjAfVwHoxxgNzTGW89VBT3GN3vTDG2zpump"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full max-w-md mx-auto block bg-[#F97316] text-white text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-[#EA580C] transition-all duration-300 border-4 border-black transform-none hover:translate-y-[-8px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" 
+            className="w-full max-w-md mx-auto block bg-[#8B5CF6] text-white text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-[#7C3AED] transition-all duration-300 border-4 border-[#403E43] transform-none hover:translate-y-[-8px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" 
             style={{ 
               WebkitTextStroke: '1.5px black',
               textShadow: '3px 3px 0px rgba(0,0,0,0.2)',
             }}>
-            BUY $PCAT
+            BUY $GMAS
           </a>
         </div>
 
         {/* Disclaimer */}
         <div className="max-w-3xl mx-auto relative z-20">
-          <div className="bg-white border-4 border-black rounded-2xl p-6 sm:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300">
-            <p className="text-xl sm:text-2xl text-center" 
+          <div className="bg-[#222222] border-4 border-[#403E43] rounded-2xl p-6 sm:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300">
+            <p className="text-xl sm:text-2xl text-center text-[#8B5CF6]" 
                style={{ 
-                 color: '#1A1F2C',
                  lineHeight: '1.6',
                  textShadow: '1px 1px 0px rgba(0,0,0,0.1)',
                }}>
-              $PEACHCAT is fully community-driven and thrives on good vibes and memes. There's no team, no roadmap—just a group of people having fun together. Remember, it's not financial advice; it's just pure entertainment and chaos in coin form!
+              $GROKMAS is fully community-driven and thrives on good vibes and memes. There's no team, no roadmap—just a group of people having fun together. Remember, it's not financial advice; it's just pure entertainment and chaos in coin form!
             </p>
           </div>
         </div>
 
-        {/* PFP Generator Section - Now positioned at the bottom */}
+        {/* PFP Generator Section */}
         <div className="mt-16">
           <PfpGenerator />
         </div>
@@ -130,33 +129,33 @@ const Index = () => {
             href="https://x.com/peachcatso"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
+            className="bg-[#222222] p-3 rounded-full border-4 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
           >
-            <Twitter className="w-8 h-8 text-[#1DA1F2]" />
+            <Twitter className="w-8 h-8 text-[#8B5CF6]" />
           </a>
           <a 
             href="https://t.me/peachcatso"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
+            className="bg-[#222222] p-3 rounded-full border-4 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
           >
-            <MessageCircle className="w-8 h-8 text-[#0088cc]" />
+            <MessageCircle className="w-8 h-8 text-[#8B5CF6]" />
           </a>
         </div>
 
         {/* Decorative Elements */}
         <div className="fixed left-8 top-[30%] z-10 hidden lg:block">
-          <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-12deg] animate-bounce">
-            <p className="text-2xl text-[#F97316]">
-              🍑 Peach Power! 
+          <div className="bg-[#222222] border-4 border-[#403E43] p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-12deg] animate-bounce">
+            <p className="text-2xl text-[#8B5CF6]">
+              🎅 Grok Power! 
             </p>
           </div>
         </div>
 
         <div className="fixed right-8 top-[70%] z-10 hidden lg:block">
-          <div className="bg-white border-4 border-black p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[12deg] animate-float">
-            <p className="text-2xl text-[#F97316]">
-              😺 Meow to the Moon!
+          <div className="bg-[#222222] border-4 border-[#403E43] p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[12deg] animate-float">
+            <p className="text-2xl text-[#8B5CF6]">
+              🎄 Grok to the Moon!
             </p>
           </div>
         </div>
@@ -164,20 +163,20 @@ const Index = () => {
 
       {/* Footer */}
       <div className="text-center py-8 relative z-20">
-        <p className="text-xl text-[#1A1F2C]">
-          ©2024 Peachcat. All Rights Reserved.
+        <p className="text-xl text-[#8B5CF6]">
+          ©2024 Grokmas. All Rights Reserved.
         </p>
       </div>
 
       {/* Coming Soon Dialog */}
       <Dialog open={showComingSoon} onOpenChange={setShowComingSoon}>
-        <DialogContent className="bg-white border-4 border-black rounded-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+        <DialogContent className="bg-[#222222] border-4 border-[#403E43] rounded-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-bold text-[#F97316] text-center">
+            <DialogTitle className="text-3xl font-bold text-[#8B5CF6] text-center">
               Coming Soon! 🚀
             </DialogTitle>
           </DialogHeader>
-          <p className="text-xl text-center text-[#1A1F2C]">
+          <p className="text-xl text-center text-[#8B5CF6]">
             Stay tuned! Our social channels are launching soon.
           </p>
         </DialogContent>
