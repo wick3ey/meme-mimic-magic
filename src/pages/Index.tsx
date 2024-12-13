@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
 import { PfpGenerator } from '@/components/PfpGenerator';
-import { CreditCard, Wallet } from 'lucide-react';
+import { CreditCard } from 'lucide-react';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -98,11 +98,7 @@ const Index = () => {
             <div className="space-y-8">
               <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
-                  <img 
-                    src="/lovable-uploads/2980bf7f-eb7e-450a-bcd7-6e7b26681a9b.png" 
-                    alt="CEX" 
-                    className="w-8 h-8"
-                  />
+                  <CreditCard className="w-8 h-8 text-white" />
                   <h3 className="text-2xl font-bold text-white" style={{ textShadow: 'none' }}>
                     Step 1: Get SOL from a CEX
                   </h3>
@@ -115,7 +111,7 @@ const Index = () => {
               <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
                   <img 
-                    src="/lovable-uploads/17594151-d2a6-4620-969a-c6305df2dc84.png" 
+                    src="/lovable-uploads/d44fc485-8fb1-4420-b06c-1371e06d90a7.png" 
                     alt="Phantom" 
                     className="w-8 h-8"
                   />
@@ -131,7 +127,7 @@ const Index = () => {
               <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
                   <img 
-                    src="/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png" 
+                    src="/lovable-uploads/7f7adf79-509e-4fb7-9a8c-1a577975196e.png" 
                     alt="Grokmas" 
                     className="w-8 h-8"
                   />
