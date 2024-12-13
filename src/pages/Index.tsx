@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { PfpGenerator } from '@/components/PfpGenerator';
-import { CreditCard } from 'lucide-react';
+import TokenInfo from '@/components/TokenInfo';
+import HowToBuy from '@/components/HowToBuy';
+import GrokAIChat from '@/components/GrokAIChat';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -63,10 +65,8 @@ const Index = () => {
                   alt="Grokmas" 
                   className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black subtle-float"
                 />
-                <h1 className="text-5xl sm:text-7xl font-bold tracking-tight glow-effect" 
-                    style={{ 
-                      letterSpacing: '4px'
-                    }}>
+                <h1 className="text-5xl sm:text-7xl font-bold tracking-tight" 
+                    style={{ letterSpacing: '4px' }}>
                   GROKMAS
                 </h1>
               </div>
@@ -74,55 +74,7 @@ const Index = () => {
           </div>
 
           {/* Token Info Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-8 stagger-fade-in">
-            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
-                  style={{ 
-                    letterSpacing: '2px'
-                  }}>
-                TOKEN ADDRESS
-              </h2>
-              <p className="text-2xl sm:text-3xl font-bold text-center text-white">
-                xxx
-              </p>
-            </div>
-
-            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
-                  style={{ 
-                    letterSpacing: '2px'
-                  }}>
-                TOKEN SUPPLY
-              </h2>
-              <p className="text-2xl sm:text-3xl font-bold text-center text-white">
-                1 BILLION
-              </p>
-            </div>
-
-            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
-                  style={{ 
-                    letterSpacing: '2px'
-                  }}>
-                LIQUIDITY
-              </h2>
-              <p className="text-2xl sm:text-3xl font-bold text-center text-white">
-                LOCKED
-              </p>
-            </div>
-
-            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
-                  style={{ 
-                    letterSpacing: '2px'
-                  }}>
-                CONTRACT
-              </h2>
-              <p className="text-2xl sm:text-3xl font-bold text-center text-white">
-                REVOKED
-              </p>
-            </div>
-          </div>
+          <TokenInfo />
 
           {/* Buy Button */}
           <div className="relative z-20 my-12">
@@ -130,7 +82,7 @@ const Index = () => {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px] glow-effect">
+              className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px]">
               BUY $GMAS
             </a>
           </div>
@@ -141,60 +93,7 @@ const Index = () => {
           </div>
 
           {/* How to Buy Guide */}
-          <div className="max-w-4xl mx-auto mt-16 bg-[#1A1F2C] rounded-2xl p-8 border-4 border-black">
-            <h2 className="text-4xl font-bold mb-8 text-center text-white"
-                style={{ 
-                  letterSpacing: '2px'
-                }}>
-              HOW TO BUY $GMAS
-            </h2>
-            
-            <div className="space-y-8">
-              <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
-                <div className="flex items-center gap-4 mb-4">
-                  <CreditCard className="w-8 h-8 text-white" />
-                  <h3 className="text-2xl font-bold text-white">
-                    Step 1: Get SOL from a CEX
-                  </h3>
-                </div>
-                <p className="text-lg text-white">
-                  Purchase SOL from your preferred exchange (Binance, Coinbase, etc.). Make sure to buy enough to cover your desired $GMAS purchase plus transaction fees.
-                </p>
-              </div>
-
-              <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
-                <div className="flex items-center gap-4 mb-4">
-                  <img 
-                    src="/lovable-uploads/d44fc485-8fb1-4420-b06c-1371e06d90a7.png" 
-                    alt="Phantom" 
-                    className="w-8 h-8"
-                  />
-                  <h3 className="text-2xl font-bold text-white">
-                    Step 2: Transfer to Phantom
-                  </h3>
-                </div>
-                <p className="text-lg text-white">
-                  Download Phantom Wallet, create an account, and copy your wallet address. Withdraw your SOL from the exchange to your Phantom wallet address.
-                </p>
-              </div>
-
-              <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
-                <div className="flex items-center gap-4 mb-4">
-                  <img 
-                    src="/lovable-uploads/7f7adf79-509e-4fb7-9a8c-1a577975196e.png" 
-                    alt="Grokmas" 
-                    className="w-8 h-8"
-                  />
-                  <h3 className="text-2xl font-bold text-white">
-                    Step 3: Swap for $GMAS
-                  </h3>
-                </div>
-                <p className="text-lg text-white">
-                  Open Phantom app, tap the swap feature, and either search for "$GMAS" or paste the token address. Enter the amount of SOL you want to swap, review the transaction, and confirm!
-                </p>
-              </div>
-            </div>
-          </div>
+          <HowToBuy />
         </div>
       </div>
 
@@ -211,6 +110,9 @@ const Index = () => {
           </p>
         </DialogContent>
       </Dialog>
+
+      {/* Grok AI Chat Widget */}
+      <GrokAIChat />
     </div>
   );
 };
