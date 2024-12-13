@@ -57,12 +57,12 @@ const Index = () => {
 
           {/* Header Section */}
           <div className="max-w-5xl mx-auto relative z-20">
-            <div className="bg-white bg-opacity-20 rounded-2xl p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
+            <div className="bg-white bg-opacity-20 rounded-2xl p-6 border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <img 
                   src="/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png" 
                   alt="Grokmas" 
-                  className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] animate-bounce-slow"
+                  className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black animate-bounce-slow"
                 />
                 <h1 className="text-5xl sm:text-7xl font-bold tracking-tight animate-float text-white" 
                     style={{ 
@@ -74,9 +74,9 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Token Address */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 sm:gap-8 mt-8">
-            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
+          {/* Token Info Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-8">
+            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
                   style={{ 
                     letterSpacing: '2px'
@@ -87,6 +87,42 @@ const Index = () => {
                 xxx
               </p>
             </div>
+
+            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
+                  style={{ 
+                    letterSpacing: '2px'
+                  }}>
+                TOKEN SUPPLY
+              </h2>
+              <p className="text-2xl sm:text-3xl font-bold text-center text-white">
+                1 BILLION
+              </p>
+            </div>
+
+            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
+                  style={{ 
+                    letterSpacing: '2px'
+                  }}>
+                LIQUIDITY
+              </h2>
+              <p className="text-2xl sm:text-3xl font-bold text-center text-white">
+                LOCKED
+              </p>
+            </div>
+
+            <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
+                  style={{ 
+                    letterSpacing: '2px'
+                  }}>
+                CONTRACT
+              </h2>
+              <p className="text-2xl sm:text-3xl font-bold text-center text-white">
+                REVOKED
+              </p>
+            </div>
           </div>
 
           {/* Buy Button */}
@@ -95,7 +131,7 @@ const Index = () => {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] animate-bounce-slow">
+              className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px] animate-bounce-slow">
               BUY $GMAS
             </a>
           </div>
@@ -106,7 +142,7 @@ const Index = () => {
           </div>
 
           {/* How to Buy Guide */}
-          <div className="max-w-4xl mx-auto mt-16 bg-[#1A1F2C] rounded-2xl p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
+          <div className="max-w-4xl mx-auto mt-16 bg-[#1A1F2C] rounded-2xl p-8 border-4 border-black">
             <h2 className="text-4xl font-bold mb-8 text-center text-white"
                 style={{ 
                   letterSpacing: '2px'
@@ -165,7 +201,7 @@ const Index = () => {
 
       {/* Dialog */}
       <Dialog open={showComingSoon} onOpenChange={setShowComingSoon}>
-        <DialogContent className="bg-white border-4 border-black rounded-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
+        <DialogContent className="bg-white border-4 border-black rounded-2xl">
           <DialogHeader>
             <DialogTitle className="text-3xl font-bold text-black text-center">
               Coming Soon! 🚀
