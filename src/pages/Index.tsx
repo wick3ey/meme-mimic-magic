@@ -98,8 +98,12 @@ const Index = () => {
             <div className="space-y-8">
               <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
-                  <CreditCard className="w-8 h-8 text-white" />
-                  <h3 className="text-2xl font-bold text-white">
+                  <img 
+                    src="/lovable-uploads/2980bf7f-eb7e-450a-bcd7-6e7b26681a9b.png" 
+                    alt="CEX" 
+                    className="w-8 h-8"
+                  />
+                  <h3 className="text-2xl font-bold text-white" style={{ textShadow: 'none' }}>
                     Step 1: Get SOL from a CEX
                   </h3>
                 </div>
@@ -110,8 +114,12 @@ const Index = () => {
 
               <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
-                  <Wallet className="w-8 h-8 text-white" />
-                  <h3 className="text-2xl font-bold text-white">
+                  <img 
+                    src="/lovable-uploads/17594151-d2a6-4620-969a-c6305df2dc84.png" 
+                    alt="Phantom" 
+                    className="w-8 h-8"
+                  />
+                  <h3 className="text-2xl font-bold text-white" style={{ textShadow: 'none' }}>
                     Step 2: Transfer to Phantom
                   </h3>
                 </div>
@@ -127,7 +135,7 @@ const Index = () => {
                     alt="Grokmas" 
                     className="w-8 h-8"
                   />
-                  <h3 className="text-2xl font-bold text-white">
+                  <h3 className="text-2xl font-bold text-white" style={{ textShadow: 'none' }}>
                     Step 3: Swap for $GMAS
                   </h3>
                 </div>
