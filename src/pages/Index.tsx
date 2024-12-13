@@ -14,12 +14,6 @@ const Index = () => {
     toast.success("Token address copied to clipboard!");
   };
 
-  const handleSocialClick = (hasLink: boolean) => {
-    if (!hasLink) {
-      setShowComingSoon(true);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-[#1A1F2C] relative overflow-hidden p-4">
       {/* Header Section */}
@@ -29,12 +23,12 @@ const Index = () => {
             <img 
               src="/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png" 
               alt="Grokmas" 
-              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-bounce"
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-bounce-slow"
             />
-            <h1 className="text-5xl sm:text-6xl font-bold text-[#8B5CF6] tracking-tight" 
+            <h1 className="text-5xl sm:text-7xl font-bold text-[#8B5CF6] tracking-tight animate-float" 
                 style={{ 
-                  WebkitTextStroke: '2px black',
-                  textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
+                  WebkitTextStroke: '3px black',
+                  textShadow: '6px 6px 0px rgba(0,0,0,0.2)',
                 }}>
               GROKMAS
             </h1>
@@ -46,28 +40,28 @@ const Index = () => {
       <div className="max-w-5xl mx-auto p-4 sm:p-8 mt-8 relative z-20">
         {/* Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
-          <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center" 
+          <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+            <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center animate-float" 
                 style={{ 
-                  WebkitTextStroke: '1.5px black',
-                  textShadow: '3px 3px 0px rgba(0,0,0,0.1)',
+                  WebkitTextStroke: '2px black',
+                  textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
                 }}>
               TOTAL SUPPLY
             </h2>
             <p className="text-4xl sm:text-5xl font-bold text-center text-[#8B5CF6]" 
                style={{ 
-                 WebkitTextStroke: '1.5px black',
-                 textShadow: '3px 3px 0px rgba(0,0,0,0.1)',
+                 WebkitTextStroke: '2px black',
+                 textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
                }}>
               1,000,000,000
             </p>
           </div>
 
-          <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform-none hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center" 
+          <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+            <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center animate-float" 
                 style={{ 
-                  WebkitTextStroke: '1.5px black',
-                  textShadow: '3px 3px 0px rgba(0,0,0,0.1)',
+                  WebkitTextStroke: '2px black',
+                  textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
                 }}>
               TOKEN ADDRESS
             </h2>
@@ -76,13 +70,13 @@ const Index = () => {
                  onClick={handleCopyAddress}
                  style={{ 
                    WebkitTextStroke: '1px black',
-                   textShadow: '2px 2px 0px rgba(0,0,0,0.1)',
+                   textShadow: '2px 2px 0px rgba(0,0,0,0.2)',
                  }}>
                 {displayAddress}
               </p>
               <button 
                 onClick={handleCopyAddress}
-                className="bg-[#8B5CF6] text-white px-3 py-1 rounded-lg hover:bg-[#7C3AED] transition-colors text-sm font-bold border-2 border-[#403E43] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+                className="bg-[#8B5CF6] text-white px-4 py-2 rounded-lg hover:bg-[#7C3AED] transition-colors text-sm font-bold border-2 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300"
               >
                 Copy
               </button>
@@ -96,10 +90,10 @@ const Index = () => {
             href="https://pump.fun/coin/2jqmPF7p4TjAfVwHoxxgNzTGW89VBT3GN3vTDG2zpump"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full max-w-md mx-auto block bg-[#8B5CF6] text-white text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-[#7C3AED] transition-all duration-300 border-4 border-[#403E43] transform-none hover:translate-y-[-8px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" 
+            className="w-full max-w-md mx-auto block bg-[#8B5CF6] text-white text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-[#7C3AED] transition-all duration-300 border-4 border-[#403E43] transform hover:translate-y-[-8px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] animate-bounce-slow" 
             style={{ 
-              WebkitTextStroke: '1.5px black',
-              textShadow: '3px 3px 0px rgba(0,0,0,0.2)',
+              WebkitTextStroke: '2px black',
+              textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
             }}>
             BUY $GMAS
           </a>
@@ -111,7 +105,7 @@ const Index = () => {
             <p className="text-xl sm:text-2xl text-center text-[#8B5CF6]" 
                style={{ 
                  lineHeight: '1.6',
-                 textShadow: '1px 1px 0px rgba(0,0,0,0.1)',
+                 textShadow: '2px 2px 0px rgba(0,0,0,0.1)',
                }}>
               $GROKMAS is fully community-driven and thrives on good vibes and memes. There's no team, no roadmap—just a group of people having fun together. Remember, it's not financial advice; it's just pure entertainment and chaos in coin form!
             </p>
@@ -145,8 +139,8 @@ const Index = () => {
 
         {/* Decorative Elements */}
         <div className="fixed left-8 top-[30%] z-10 hidden lg:block">
-          <div className="bg-[#222222] border-4 border-[#403E43] p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-12deg] animate-bounce">
-            <p className="text-2xl text-[#8B5CF6]">
+          <div className="bg-[#222222] border-4 border-[#403E43] p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-12deg] animate-bounce-slow">
+            <p className="text-2xl text-[#8B5CF6] font-bold">
               🎅 Grok Power! 
             </p>
           </div>
@@ -154,7 +148,7 @@ const Index = () => {
 
         <div className="fixed right-8 top-[70%] z-10 hidden lg:block">
           <div className="bg-[#222222] border-4 border-[#403E43] p-4 rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[12deg] animate-float">
-            <p className="text-2xl text-[#8B5CF6]">
+            <p className="text-2xl text-[#8B5CF6] font-bold">
               🎄 Grok to the Moon!
             </p>
           </div>
@@ -163,7 +157,7 @@ const Index = () => {
 
       {/* Footer */}
       <div className="text-center py-8 relative z-20">
-        <p className="text-xl text-[#8B5CF6]">
+        <p className="text-xl text-[#8B5CF6] font-bold">
           ©2024 Grokmas. All Rights Reserved.
         </p>
       </div>

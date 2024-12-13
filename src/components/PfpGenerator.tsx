@@ -1,23 +1,14 @@
 import { useState, useRef } from 'react';
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { Download } from 'lucide-react';
 
 export const PfpGenerator = () => {
-  const [selectedHat, setSelectedHat] = useState<string>('hat1');
   const [position, setPosition] = useState({ x: 50, y: 0 });
   const [scale, setScale] = useState(1);
   const [rotation, setRotation] = useState(0);
-  const [showControls, setShowControls] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  const handleGeneratePfp = () => {
-    setShowControls(true);
-    toast.success("Hat added! Adjust position and size.");
-  };
 
   const handleDownload = async () => {
     if (!containerRef.current) return;
@@ -33,54 +24,24 @@ export const PfpGenerator = () => {
         return;
       }
 
-      // Convert the DOM node to canvas using html2canvas
-      const dataUrl = await new Promise<string>((resolve) => {
-        const baseImage = new Image();
-        baseImage.crossOrigin = "anonymous";
-        baseImage.src = "/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png";
-        
-        baseImage.onload = () => {
-          ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
-          
-          const hatImage = new Image();
-          hatImage.crossOrigin = "anonymous";
-          hatImage.src = selectedHat === 'hat1' 
-            ? "/lovable-uploads/8a03f679-f64c-479b-a1f0-b32b0bf403bb.png" 
-            : "/lovable-uploads/92af570a-3f52-45d7-a15b-d21492910d35.png";
-          
-          hatImage.onload = () => {
-            const hatWidth = 150 * scale;
-            const hatHeight = (hatImage.height / hatImage.width) * hatWidth;
-            
-            ctx.save();
-            ctx.translate(
-              canvas.width * (position.x / 100),
-              canvas.height * (position.y / 100)
-            );
-            ctx.rotate((rotation * Math.PI) / 180);
-            ctx.drawImage(
-              hatImage,
-              -hatWidth / 2,
-              -hatHeight / 2,
-              hatWidth,
-              hatHeight
-            );
-            ctx.restore();
-            
-            resolve(canvas.toDataURL('image/png'));
-          };
-        };
-      });
-
-      // Create download link
-      const link = document.createElement('a');
-      link.download = 'grokmas-pfp.png';
-      link.href = dataUrl;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      const baseImage = new Image();
+      baseImage.crossOrigin = "anonymous";
+      baseImage.src = "/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png";
       
-      toast.success("Profile picture downloaded!");
+      baseImage.onload = () => {
+        ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+        
+        // Create download link
+        const dataUrl = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.download = 'grokmas-pfp.png';
+        link.href = dataUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        toast.success("Profile picture downloaded!");
+      };
     } catch (error) {
       toast.error("Failed to download image");
       console.error(error);
@@ -88,128 +49,26 @@ export const PfpGenerator = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4 space-y-6">
+    <div className="max-w-lg mx-auto p-4 space-y-6 animate-bounce">
       <div 
         ref={containerRef}
-        className="relative w-full aspect-square bg-[#222222] rounded-xl overflow-hidden border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+        className="relative w-full aspect-square bg-[#222222] rounded-xl overflow-hidden border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:scale-105 transition-transform duration-300"
       >
-        {/* Base image */}
         <img 
           src="/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png" 
           alt="Grokmas base" 
           className="w-full h-full object-cover"
         />
-        
-        {/* Hat overlay */}
-        {showControls && (
-          <img 
-            src={selectedHat === 'hat1' ? "/lovable-uploads/8a03f679-f64c-479b-a1f0-b32b0bf403bb.png" : "/lovable-uploads/92af570a-3f52-45d7-a15b-d21492910d35.png"}
-            alt="Hat"
-            className="absolute pointer-events-none"
-            style={{
-              left: `${position.x}%`,
-              top: `${position.y}%`,
-              transform: `translate(-50%, -50%) scale(${scale}) rotate(${rotation}deg)`,
-              width: '150px',
-              height: 'auto',
-            }}
-          />
-        )}
       </div>
 
-      <div className="space-y-6 bg-[#222222] p-6 rounded-xl border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-        {!showControls ? (
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-center text-[#8B5CF6]">Choose Hat</h3>
-            <RadioGroup 
-              defaultValue="hat1" 
-              onValueChange={(value) => setSelectedHat(value)}
-              className="flex justify-center gap-8"
-            >
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="hat1" id="hat1" />
-                <Label htmlFor="hat1" className="text-[#8B5CF6]">WIF</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="hat2" id="hat2" />
-                <Label htmlFor="hat2" className="text-[#8B5CF6]">Santa Hat</Label>
-              </div>
-            </RadioGroup>
-            <Button 
-              onClick={handleGeneratePfp} 
-              className="w-full bg-[#8B5CF6] hover:bg-[#7C3AED] text-white border-2 border-[#403E43]"
-            >
-              Generate PFP
-            </Button>
-          </div>
-        ) : (
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h4 className="font-medium text-[#8B5CF6]">X-Position</h4>
-              <Slider
-                value={[position.x]}
-                onValueChange={(value) => setPosition(prev => ({ ...prev, x: value[0] }))}
-                min={0}
-                max={100}
-                step={1}
-                className="text-[#8B5CF6]"
-              />
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-medium text-[#8B5CF6]">Y-Position</h4>
-              <Slider
-                value={[position.y]}
-                onValueChange={(value) => setPosition(prev => ({ ...prev, y: value[0] }))}
-                min={0}
-                max={100}
-                step={1}
-                className="text-[#8B5CF6]"
-              />
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-medium text-[#8B5CF6]">Size</h4>
-              <Slider
-                value={[scale * 100]}
-                onValueChange={(value) => setScale(value[0] / 100)}
-                min={50}
-                max={300}
-                step={1}
-                className="text-[#8B5CF6]"
-              />
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-medium text-[#8B5CF6]">Rotation</h4>
-              <Slider
-                value={[rotation]}
-                onValueChange={(value) => setRotation(value[0])}
-                min={-180}
-                max={180}
-                step={1}
-                className="text-[#8B5CF6]"
-              />
-            </div>
-
-            <div className="flex gap-4">
-              <Button 
-                onClick={() => setShowControls(false)} 
-                variant="outline" 
-                className="flex-1 bg-transparent border-[#403E43] text-[#8B5CF6] hover:bg-[#403E43]"
-              >
-                Start Over
-              </Button>
-              <Button 
-                onClick={handleDownload}
-                className="flex-1 gap-2 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white border-2 border-[#403E43]"
-              >
-                <Download className="w-4 h-4" />
-                Download
-              </Button>
-            </div>
-          </div>
-        )}
+      <div className="space-y-6 bg-[#222222] p-6 rounded-xl border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:scale-105 transition-transform duration-300">
+        <Button 
+          onClick={handleDownload}
+          className="w-full gap-2 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white border-4 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300 text-xl font-bold"
+        >
+          <Download className="w-6 h-6" />
+          Download PFP
+        </Button>
       </div>
     </div>
   );
