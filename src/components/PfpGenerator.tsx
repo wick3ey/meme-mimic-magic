@@ -52,7 +52,7 @@ export const PfpGenerator = () => {
     <div className="max-w-lg mx-auto p-4 space-y-6 animate-bounce">
       <div 
         ref={containerRef}
-        className="relative w-full aspect-square bg-[#222222] rounded-xl overflow-hidden border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:scale-105 transition-transform duration-300"
+        className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-xl overflow-hidden border-4 border-[#DC2626] shadow-[8px_8px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
           src="/lovable-uploads/f57b3600-380e-4999-8a73-c2fb9b3d9138.png" 
@@ -61,10 +61,10 @@ export const PfpGenerator = () => {
         />
       </div>
 
-      <div className="space-y-6 bg-[#222222] p-6 rounded-xl border-4 border-[#403E43] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:scale-105 transition-transform duration-300">
+      <div className="space-y-6 bg-[#DC2626] bg-opacity-10 p-6 rounded-xl border-4 border-[#DC2626] shadow-[8px_8px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300">
         <Button 
           onClick={handleDownload}
-          className="w-full gap-2 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white border-4 border-[#403E43] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300 text-xl font-bold"
+          className="w-full gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white border-4 border-[#1F2937] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300 text-xl font-bold"
         >
           <Download className="w-6 h-6" />
           Download PFP
