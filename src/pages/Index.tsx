@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { toast } from "sonner";
 import { PfpGenerator } from '@/components/PfpGenerator';
 import { CreditCard } from 'lucide-react';
 
@@ -62,9 +61,9 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png" 
                   alt="Grokmas" 
-                  className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black animate-bounce-slow"
+                  className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black subtle-float"
                 />
-                <h1 className="text-5xl sm:text-7xl font-bold tracking-tight animate-float text-white" 
+                <h1 className="text-5xl sm:text-7xl font-bold tracking-tight glow-effect" 
                     style={{ 
                       letterSpacing: '4px'
                     }}>
@@ -75,9 +74,9 @@ const Index = () => {
           </div>
 
           {/* Token Info Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-8 stagger-fade-in">
             <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
                   style={{ 
                     letterSpacing: '2px'
                   }}>
@@ -89,7 +88,7 @@ const Index = () => {
             </div>
 
             <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
                   style={{ 
                     letterSpacing: '2px'
                   }}>
@@ -101,7 +100,7 @@ const Index = () => {
             </div>
 
             <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
                   style={{ 
                     letterSpacing: '2px'
                   }}>
@@ -113,7 +112,7 @@ const Index = () => {
             </div>
 
             <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center fade-in-up" 
                   style={{ 
                     letterSpacing: '2px'
                   }}>
@@ -131,7 +130,7 @@ const Index = () => {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px] animate-bounce-slow">
+              className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px] glow-effect">
               BUY $GMAS
             </a>
           </div>

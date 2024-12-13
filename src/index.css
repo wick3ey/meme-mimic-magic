@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './styles/animations.css';
 
 @font-face {
   font-family: 'Hitchcut';
@@ -50,41 +51,4 @@
   button {
     @apply font-['Hitchcut'] font-bold;
   }
-}
-
-@layer utilities {
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
-
-  .animate-bounce-slow {
-    animation: bounce 2s ease-in-out infinite;
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.card-hover {
-  transition: all 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

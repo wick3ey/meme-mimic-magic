@@ -1,0 +1,50 @@
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+  }
+}
+
+.subtle-float {
+  animation: subtle-float 6s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.glow-effect {
+  animation: glow 4s ease-in-out infinite;
+}
+
+.stagger-fade-in > * {
+  opacity: 0;
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.stagger-fade-in > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-fade-in > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-fade-in > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-fade-in > *:nth-child(4) { animation-delay: 0.4s; }
