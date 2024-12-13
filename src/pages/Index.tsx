@@ -27,7 +27,7 @@ const Index = () => {
           </div>
           <div className="flex-1 mx-4">
             <div className="bg-white rounded-md p-1 text-center border border-gray-300">
-              timmi.meme
+              grokmas.meme
             </div>
           </div>
         </div>
