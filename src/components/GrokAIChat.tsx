@@ -10,7 +10,7 @@ const responses = [
   "The name Grokmas comes from Elon Musk's AI project + Christmas, representing the perfect holiday pump!",
   "We have major influencers lined up to promote Grokmas! 🎉",
   "Our smart contract has been audited and verified for maximum security.",
-  "Liquidity is locked for 1 year to ensure trading stability.",
+  "Liquidity is permanently locked for maximum security and trust.",
   "We're launching aggressive marketing campaigns across all social platforms!",
   "The team is focused on getting Elon Musk's attention with this Christmas spin on Grok!",
   "We have partnerships with major crypto influencers and platforms in the works.",
@@ -21,7 +21,6 @@ const responses = [
   "Regular burns planned to maintain token value.",
   "We're implementing guerilla marketing tactics across social media.",
   "Community raids and trending campaigns are part of our strategy.",
-  "Staking rewards are coming soon with attractive APY.",
   "We're listed on pump.fun with more exchanges coming!",
   "Regular technical updates and improvements planned.",
   "Our team has experience from successful meme token launches.",
@@ -33,7 +32,8 @@ const responses = [
   "Marketing strategy focuses on maximum visibility and virality.",
   "Anti-bot measures in place for fair trading.",
   "Regular community contests with generous rewards.",
-  "Join us in making Grokmas the biggest Christmas meme of 2023! 🎅"
+  "Join us in making Grokmas the biggest Christmas meme of 2023! 🎅",
+  "We're running coordinated social media campaigns to catch Elon's attention!"
 ];
 
 const GrokAIChat = () => {
