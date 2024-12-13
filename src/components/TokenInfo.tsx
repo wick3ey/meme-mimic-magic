@@ -7,7 +7,7 @@ const TokenInfo = () => {
           TOKEN ADDRESS
         </h2>
         <p className="text-2xl sm:text-3xl font-bold text-center text-white">
-          xxx
+          38afggkTQN5MLiJWAt7UeYXrFJK8iV9nvSam5aPcpump
         </p>
       </div>
 
