@@ -25,12 +25,11 @@ const Index = () => {
               alt="Grokmas" 
               className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] animate-bounce-slow"
             />
-            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight animate-float" 
+            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight animate-float text-white" 
                 style={{ 
                   WebkitTextStroke: '4px #1F2937',
                   textShadow: '8px 8px 0px rgba(0,0,0,0.4)',
-                  letterSpacing: '4px',
-                  color: '#DC2626'
+                  letterSpacing: '4px'
                 }}>
               GROKMAS
             </h1>
@@ -43,12 +42,11 @@ const Index = () => {
         {/* Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
           <div className="bg-[#DC2626] bg-opacity-10 border-4 border-[#DC2626] p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(220,38,38,0.3)]">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float" 
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
                 style={{ 
                   WebkitTextStroke: '3px #1F2937',
                   textShadow: '6px 6px 0px rgba(0,0,0,0.4)',
-                  letterSpacing: '2px',
-                  color: '#DC2626'
+                  letterSpacing: '2px'
                 }}>
               TOTAL SUPPLY
             </h2>
@@ -62,12 +60,11 @@ const Index = () => {
           </div>
 
           <div className="bg-[#DC2626] bg-opacity-10 border-4 border-[#DC2626] p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(220,38,38,0.3)]">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float" 
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
                 style={{ 
                   WebkitTextStroke: '3px #1F2937',
                   textShadow: '6px 6px 0px rgba(0,0,0,0.4)',
-                  letterSpacing: '2px',
-                  color: '#DC2626'
+                  letterSpacing: '2px'
                 }}>
               TOKEN ADDRESS
             </h2>
