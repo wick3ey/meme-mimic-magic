@@ -27,6 +27,34 @@ const Index = () => {
 
         {/* Main Content Area */}
         <div className="bg-[#FF7F7F] p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-0">
+          {/* Social Media Links */}
+          <div className="fixed top-4 right-4 flex gap-4 z-50">
+            <a 
+              href="https://x.com/groksmas" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
+            >
+              <img 
+                src="/lovable-uploads/92af570a-3f52-45d7-a15b-d21492910d35.png" 
+                alt="Twitter" 
+                className="w-8 h-8"
+              />
+            </a>
+            <a 
+              href="https://t.me/grokmass" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
+            >
+              <img 
+                src="/lovable-uploads/8a03f679-f64c-479b-a1f0-b32b0bf403bb.png" 
+                alt="Telegram" 
+                className="w-8 h-8"
+              />
+            </a>
+          </div>
+
           {/* Header Section */}
           <div className="max-w-5xl mx-auto relative z-20">
             <div className="bg-white bg-opacity-20 rounded-2xl p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
