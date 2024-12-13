@@ -27,8 +27,10 @@ const Index = () => {
             />
             <h1 className="text-5xl sm:text-7xl font-bold text-[#8B5CF6] tracking-tight animate-float" 
                 style={{ 
-                  WebkitTextStroke: '3px black',
-                  textShadow: '6px 6px 0px rgba(0,0,0,0.2)',
+                  WebkitTextStroke: '4px black',
+                  textShadow: '8px 8px 0px rgba(0,0,0,0.4)',
+                  letterSpacing: '4px',
+                  color: '#8B5CF6'
                 }}>
               GROKMAS
             </h1>
@@ -43,8 +45,10 @@ const Index = () => {
           <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center animate-float" 
                 style={{ 
-                  WebkitTextStroke: '2px black',
-                  textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
+                  WebkitTextStroke: '3px black',
+                  textShadow: '6px 6px 0px rgba(0,0,0,0.4)',
+                  letterSpacing: '2px',
+                  color: '#8B5CF6'
                 }}>
               TOTAL SUPPLY
             </h2>
@@ -60,8 +64,10 @@ const Index = () => {
           <div className="bg-[#222222] border-4 border-[#403E43] p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h2 className="text-[#8B5CF6] text-3xl sm:text-4xl font-bold mb-4 text-center animate-float" 
                 style={{ 
-                  WebkitTextStroke: '2px black',
-                  textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
+                  WebkitTextStroke: '3px black',
+                  textShadow: '6px 6px 0px rgba(0,0,0,0.4)',
+                  letterSpacing: '2px',
+                  color: '#8B5CF6'
                 }}>
               TOKEN ADDRESS
             </h2>
