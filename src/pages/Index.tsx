@@ -34,6 +34,7 @@ const Index = () => {
 
         {/* Main Content Area with Yellow Background */}
         <div className="bg-[#FFB800] p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-0">
+
           {/* Header Section */}
           <div className="max-w-5xl mx-auto relative z-20">
             <div className="bg-white bg-opacity-20 rounded-2xl p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
@@ -45,7 +46,6 @@ const Index = () => {
                 />
                 <h1 className="text-5xl sm:text-7xl font-bold tracking-tight animate-float text-white" 
                     style={{ 
-                      WebkitTextStroke: '4px #000000',
                       textShadow: '8px 8px 0px rgba(0,0,0,0.4)',
                       letterSpacing: '4px'
                     }}>
@@ -60,7 +60,6 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
                   style={{ 
-                    WebkitTextStroke: '3px #000000',
                     textShadow: '6px 6px 0px rgba(0,0,0,0.4)',
                     letterSpacing: '2px'
                   }}>
@@ -68,7 +67,6 @@ const Index = () => {
               </h2>
               <p className="text-4xl sm:text-5xl font-bold text-center text-white" 
                  style={{ 
-                   WebkitTextStroke: '2px #000000',
                    textShadow: '4px 4px 0px rgba(0,0,0,0.2)',
                  }}>
                 1,000,000,000
@@ -78,7 +76,6 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center animate-float text-white" 
                   style={{ 
-                    WebkitTextStroke: '3px #000000',
                     textShadow: '6px 6px 0px rgba(0,0,0,0.4)',
                     letterSpacing: '2px'
                   }}>

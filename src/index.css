@@ -44,7 +44,6 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-['Hitchcut'] font-bold;
     text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.4);
-    -webkit-text-stroke: 3px #000000;
     color: white;
     letter-spacing: 2px;
   }
