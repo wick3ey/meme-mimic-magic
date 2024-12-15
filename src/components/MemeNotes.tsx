@@ -48,7 +48,7 @@ const MemeNotes = () => {
         { top: "40%", right: "10%", transform: "translateZ(0)" }
     },
     {
-      text: "Duffy is degenerate af 🦆",
+      text: "Duffy is degenerate af 🦦",
       color: "bg-[#D3E4FD]",
       rotation: "-rotate-2",
       animation: "animate-float",
@@ -58,7 +58,7 @@ const MemeNotes = () => {
         { top: "60%", left: "15%", transform: "translateZ(0)" }
     },
     {
-      text: "That's the cutest thing 🥺",
+      text: "That's the cutest thing 🥰",
       color: "bg-[#FDE1D3]",
       rotation: "rotate-1",
       animation: "animate-float",
