@@ -12,24 +12,23 @@ const Index = () => {
     <div className="min-h-screen bg-[#ffbd59] relative overflow-hidden p-4 border-4 border-black">
       <MemeNotes />
       {/* Browser Frame */}
-      <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-2 border-black">
+      <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-4 border-black">
         {/* Browser Top Bar */}
-        <div className="bg-gray-200 p-2 rounded-t-lg border-b-2 border-black flex items-center gap-2">
+        <div className="bg-gray-200 p-2 rounded-t-lg border-b-4 border-black flex items-center gap-2">
           <div className="flex gap-2">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
           <div className="flex-1 mx-4">
-            <div className="bg-white rounded-md p-1 text-center border border-gray-300">
+            <div className="bg-white rounded-md p-1 text-center border-2 border-black">
               duffy.xyz
             </div>
           </div>
         </div>
 
         {/* Main Content Area */}
-        <div className="bg-[#ffbd59] p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-0">
-          {/* Social Media Links */}
+        <div className="bg-[#ffbd59] p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-4 border-black">
           <div className="fixed top-4 right-4 flex gap-4 z-50">
             <a 
               href="#" 
