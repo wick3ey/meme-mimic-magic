@@ -44,10 +44,10 @@ export const PfpGenerator = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4 space-y-6 animate-bounce">
+    <div className="max-w-lg mx-auto p-2 sm:p-4 space-y-4 sm:space-y-6 animate-bounce">
       <div 
         ref={containerRef}
-        className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-xl overflow-hidden border-4 border-[#DC2626] shadow-[8px_8px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
+        className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-lg sm:rounded-xl overflow-hidden border-2 sm:border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
           src="/lovable-uploads/f037e1a9-0059-4f84-9a1e-d4983e1fda16.png" 
@@ -56,12 +56,12 @@ export const PfpGenerator = () => {
         />
       </div>
 
-      <div className="space-y-6 bg-[#DC2626] bg-opacity-10 p-6 rounded-xl border-4 border-[#DC2626] shadow-[8px_8px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300">
+      <div className="space-y-4 sm:space-y-6 bg-[#DC2626] bg-opacity-10 p-4 sm:p-6 rounded-lg sm:rounded-xl border-2 sm:border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300">
         <Button 
           onClick={handleDownload}
-          className="w-full gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white border-4 border-[#1F2937] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300 text-xl font-bold"
+          className="w-full gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white border-2 sm:border-4 border-[#1F2937] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all duration-300 text-lg sm:text-xl font-bold"
         >
-          <Download className="w-6 h-6" />
+          <Download className="w-5 h-5 sm:w-6 sm:h-6" />
           Download PFP
         </Button>
       </div>
