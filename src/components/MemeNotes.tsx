@@ -3,10 +3,19 @@ import { useIsMobile } from '@/hooks/use-mobile';
 
 const MemeNotes = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [activeNote, setActiveNote] = useState<number | null>(null);
   const isMobile = useIsMobile();
 
   useEffect(() => {
-    setIsVisible(true);
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsVisible(scrollPosition > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const notes = [
@@ -17,8 +26,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[0ms]",
       position: isMobile ? 
-        { top: "15%", left: "5%" } : 
-        { top: "20%", left: "10%" }
+        { top: "25%", left: "5%", transform: "translateZ(0)" } : 
+        { top: "30%", left: "5%", transform: "translateZ(0)" }
     },
     {
       text: "I take the red pill",
@@ -27,8 +36,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[200ms]",
       position: isMobile ? 
-        { top: "35%", right: "5%" } : 
-        { top: "30%", right: "15%" }
+        { top: "45%", right: "5%", transform: "translateZ(0)" } : 
+        { top: "40%", right: "10%", transform: "translateZ(0)" }
     },
     {
       text: "Duffy is degenerate af",
@@ -37,8 +46,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[400ms]",
       position: isMobile ? 
-        { bottom: "45%", left: "8%" } : 
-        { bottom: "35%", left: "18%" }
+        { top: "65%", left: "8%", transform: "translateZ(0)" } : 
+        { top: "60%", left: "15%", transform: "translateZ(0)" }
     },
     {
       text: "That's the cutest thing",
@@ -47,8 +56,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[600ms]",
       position: isMobile ? 
-        { bottom: "25%", right: "10%" } : 
-        { bottom: "45%", right: "20%" }
+        { top: "85%", right: "10%", transform: "translateZ(0)" } : 
+        { top: "80%", right: "20%", transform: "translateZ(0)" }
     }
   ];
 
@@ -58,22 +67,30 @@ const MemeNotes = () => {
         <div
           key={index}
           className={`
-            absolute transform transition-all duration-1000
+            absolute transform transition-all duration-700
             ${note.color} ${note.rotation} ${note.animation} ${note.delay}
             p-6 rounded-xl shadow-[8px_8px_0px_0px_rgba(0,0,0,0.25)]
             border-4 border-black
-            opacity-0 ${isVisible ? 'opacity-100' : ''}
+            opacity-0 
+            ${isVisible ? 'opacity-100 translate-y-0' : 'translate-y-20'}
             text-black font-bold
-            hover:scale-110 transition-transform cursor-default
+            hover:scale-110 hover:z-[200] 
+            transition-all duration-300 ease-in-out
+            cursor-pointer pointer-events-auto
             backdrop-blur-sm bg-opacity-90
+            ${activeNote === index ? 'scale-110 z-[200]' : ''}
             ${isMobile ? 'text-base max-w-[180px]' : 'text-xl max-w-[250px]'}
           `}
           style={{
             ...note.position,
-            zIndex: 100 + index,
-            transform: `${note.rotation} translateY(${index * 5}px)`,
-            boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.25)',
+            zIndex: activeNote === index ? 200 : 100 + index,
+            boxShadow: activeNote === index 
+              ? '12px 12px 0px rgba(0, 0, 0, 0.3)' 
+              : '8px 8px 0px rgba(0, 0, 0, 0.25)',
           }}
+          onClick={() => setActiveNote(activeNote === index ? null : index)}
+          onMouseEnter={() => setActiveNote(index)}
+          onMouseLeave={() => setActiveNote(null)}
         >
           {note.text}
         </div>
