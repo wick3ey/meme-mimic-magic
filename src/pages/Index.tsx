@@ -9,7 +9,7 @@ const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#ffbd59] relative overflow-hidden p-4">
+    <div className="min-h-screen bg-[#ffbd59] relative overflow-hidden p-4 border-4 border-black">
       <MemeNotes />
       {/* Browser Frame */}
       <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-2 border-black">
