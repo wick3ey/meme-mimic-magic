@@ -9,7 +9,8 @@ const MemeNotes = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const howToBuySection = document.querySelector('h2[class*="text-4xl"]:contains("HOW TO BUY")');
+      const howToBuySection = Array.from(document.querySelectorAll('h2'))
+        .find(h2 => h2.textContent?.includes('HOW TO BUY'));
       
       if (howToBuySection) {
         const howToBuyPosition = howToBuySection.getBoundingClientRect().top + window.scrollY;
