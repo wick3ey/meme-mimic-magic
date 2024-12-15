@@ -5,7 +5,7 @@ import { useToast } from "@/components/ui/use-toast";
 const TokenInfo = () => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
-  const fullAddress = "0x1234567890abcdef1234567890abcdef12345678"; // placeholder address
+  const fullAddress = "DDxj4azK3tResibXpn35dA19pJeXcRFaNfHJtyFUpump";
   
   const displayAddress = `${fullAddress.slice(0, 4)}...${fullAddress.slice(-4)}`;
 
