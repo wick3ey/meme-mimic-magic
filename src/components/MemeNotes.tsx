@@ -9,7 +9,14 @@ const MemeNotes = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsVisible(scrollPosition > 100);
+      const howToBuySection = document.querySelector('h2[class*="text-4xl"]:contains("HOW TO BUY")');
+      
+      if (howToBuySection) {
+        const howToBuyPosition = howToBuySection.getBoundingClientRect().top + window.scrollY;
+        setIsVisible(scrollPosition > 100 && scrollPosition < howToBuyPosition - 200);
+      } else {
+        setIsVisible(scrollPosition > 100);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
