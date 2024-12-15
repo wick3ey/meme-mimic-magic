@@ -5,17 +5,15 @@ import { useToast } from "@/components/ui/use-toast";
 const TokenInfo = () => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
-  const fullAddress = "DDxj4azK3tResibXpn35dA19pJeXcRFaNfHJtyFUpump";
+  const displayText = "COMING SOON";
   
-  const displayAddress = `${fullAddress.slice(0, 4)}...${fullAddress.slice(-4)}`;
-
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(fullAddress);
+      await navigator.clipboard.writeText(displayText);
       setCopied(true);
       toast({
         title: "Copied!",
-        description: "Token address copied to clipboard",
+        description: "Text copied to clipboard",
       });
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -36,12 +34,12 @@ const TokenInfo = () => {
         </h2>
         <div className="flex items-center justify-center gap-2">
           <p className="text-lg sm:text-2xl lg:text-3xl font-bold text-center text-white break-all">
-            {displayAddress}
+            {displayText}
           </p>
           <button
             onClick={handleCopy}
             className="p-1.5 sm:p-2 hover:bg-white/10 rounded-full transition-colors"
-            aria-label="Copy token address"
+            aria-label="Copy text"
           >
             {copied ? 
               <CheckCheck className="w-5 h-5 sm:w-6 sm:h-6 text-green-400" /> : 
