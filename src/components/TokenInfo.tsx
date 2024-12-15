@@ -5,7 +5,7 @@ import { useToast } from "@/components/ui/use-toast";
 const TokenInfo = () => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
-  const displayText = "COMING SOON";
+  const displayText = "B4FvDhN44LEmXa57ud1XcA4oPNFSfrotsnWwk5UMpump";
   
   const handleCopy = async () => {
     try {
