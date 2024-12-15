@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const MemeNotes = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     setIsVisible(true);
@@ -14,7 +16,9 @@ const MemeNotes = () => {
       rotation: "-rotate-3",
       animation: "animate-float",
       delay: "delay-[0ms]",
-      position: { top: "15%", left: "5%" }
+      position: isMobile ? 
+        { top: "5%", left: "5%" } : 
+        { top: "15%", left: "5%" }
     },
     {
       text: "I take the red pill",
@@ -22,7 +26,9 @@ const MemeNotes = () => {
       rotation: "rotate-2",
       animation: "animate-float",
       delay: "delay-[200ms]",
-      position: { top: "35%", right: "8%" }
+      position: isMobile ? 
+        { top: "25%", right: "5%" } : 
+        { top: "35%", right: "8%" }
     },
     {
       text: "Duffy is degenerate af",
@@ -30,7 +36,9 @@ const MemeNotes = () => {
       rotation: "-rotate-2",
       animation: "animate-float",
       delay: "delay-[400ms]",
-      position: { bottom: "25%", left: "12%" }
+      position: isMobile ? 
+        { bottom: "35%", left: "8%" } : 
+        { bottom: "25%", left: "12%" }
     },
     {
       text: "That's the cutest thing",
@@ -38,7 +46,9 @@ const MemeNotes = () => {
       rotation: "rotate-1",
       animation: "animate-float",
       delay: "delay-[600ms]",
-      position: { bottom: "40%", right: "15%" }
+      position: isMobile ? 
+        { bottom: "50%", right: "10%" } : 
+        { bottom: "40%", right: "15%" }
     }
   ];
 
@@ -55,11 +65,12 @@ const MemeNotes = () => {
             opacity-0 ${isVisible ? 'opacity-100' : ''}
             text-black font-bold text-lg
             hover:scale-110 transition-transform cursor-default
+            backdrop-blur-sm bg-opacity-90
+            ${isMobile ? 'max-w-[150px] text-sm' : 'max-w-[200px]'}
           `}
           style={{
             ...note.position,
             zIndex: 10,
-            maxWidth: '200px',
             transform: `${note.rotation} translateY(${index * 5}px)`,
             boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.2)',
           }}
