@@ -81,7 +81,7 @@ const Index = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px]">
+              className="w-full max-w-md mx-auto block bg-green-500 hover:bg-green-600 text-white text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
               BUY $DUFFY
             </a>
           </div>
