@@ -3,7 +3,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { PfpGenerator } from '@/components/PfpGenerator';
 import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
-import GrokAIChat from '@/components/GrokAIChat';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -110,9 +109,6 @@ const Index = () => {
           </p>
         </DialogContent>
       </Dialog>
-
-      {/* Grok AI Chat Widget */}
-      <GrokAIChat />
     </div>
   );
 };
