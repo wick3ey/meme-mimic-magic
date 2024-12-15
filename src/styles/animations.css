@@ -27,6 +27,15 @@
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
 .subtle-float {
   animation: subtle-float 6s ease-in-out infinite;
 }
@@ -37,6 +46,10 @@
 
 .glow-effect {
   animation: glow 4s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
 
 .stagger-fade-in > * {
