@@ -9,7 +9,7 @@ const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#FF7F7F] relative overflow-hidden p-4">
+    <div className="min-h-screen bg-[#ffbd59] relative overflow-hidden p-4">
       {/* Browser Frame */}
       <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-2 border-black">
         {/* Browser Top Bar */}
@@ -21,17 +21,17 @@ const Index = () => {
           </div>
           <div className="flex-1 mx-4">
             <div className="bg-white rounded-md p-1 text-center border border-gray-300">
-              grokmas.xyz
+              duffy.xyz
             </div>
           </div>
         </div>
 
         {/* Main Content Area */}
-        <div className="bg-[#FF7F7F] p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-0">
+        <div className="bg-[#ffbd59] p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-0">
           {/* Social Media Links */}
           <div className="fixed top-4 right-4 flex gap-4 z-50">
             <a 
-              href="https://x.com/groksmas" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -43,7 +43,7 @@ const Index = () => {
               />
             </a>
             <a 
-              href="https://t.me/grokmass" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-3 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -61,13 +61,13 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-2xl p-6 border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <img 
-                  src="/lovable-uploads/bf8c79ad-3850-422a-9eda-06b475f8bad3.png" 
-                  alt="Grokmas" 
+                  src="/lovable-uploads/f037e1a9-0059-4f84-9a1e-d4983e1fda16.png" 
+                  alt="Duffy" 
                   className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-black subtle-float"
                 />
                 <h1 className="text-5xl sm:text-7xl font-bold tracking-tight" 
                     style={{ letterSpacing: '4px' }}>
-                  GROKMAS
+                  DUFFY
                 </h1>
               </div>
             </div>
@@ -79,11 +79,11 @@ const Index = () => {
           {/* Buy Button */}
           <div className="relative z-20 my-12">
             <a 
-              href=""
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full max-w-md mx-auto block bg-white text-black text-3xl sm:text-4xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 border-4 border-black transform hover:translate-y-[-8px]">
-              BUY $GMAS
+              BUY $DUFFY
             </a>
           </div>
 
