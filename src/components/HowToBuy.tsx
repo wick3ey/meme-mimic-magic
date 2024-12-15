@@ -50,9 +50,9 @@ const HowToBuy = () => {
         <div className="bg-[#222222] rounded-xl p-6 border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
           <div className="flex items-center gap-4 mb-4">
             <img 
-              src="memetoken.jpg" 
+              src="/lovable-uploads/ce6bdae9-1aea-4bf3-b52e-7c5d9bee1bfd.png" 
               alt="Duffy" 
-              className="w-8 h-8"
+              className="w-8 h-8 rounded-full"
             />
             <h3 className="text-2xl font-bold text-white">
               Step 3: Swap for $DUFFY
