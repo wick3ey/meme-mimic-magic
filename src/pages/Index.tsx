@@ -42,7 +42,7 @@ const Index = () => {
               />
             </a>
             <a 
-              href="https://t.me/theduffys" 
+              href="https://t.me/duffythe" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
