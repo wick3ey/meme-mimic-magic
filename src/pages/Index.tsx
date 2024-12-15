@@ -13,7 +13,6 @@ const Index = () => {
       <MemeNotes />
       {/* Browser Frame */}
       <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-4 border-black">
-        {/* Browser Top Bar */}
         <div className="bg-gray-200 p-2 rounded-t-lg border-b-4 border-black flex items-center gap-2">
           <div className="flex gap-2">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -97,26 +96,28 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Bottom Icons - Now positioned absolute relative to the viewport */}
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex gap-6 z-[100]">
-        {[
-          { src: "/lovable-uploads/fc2c072a-eda6-4bfb-bd3d-14a4f4eb89d4.png", alt: "Frog" },
-          { src: "/lovable-uploads/218273dc-1c20-42fc-9bf8-4d600da8c768.png", alt: "M Logo" },
-          { src: "/lovable-uploads/f3e0bce5-5786-4b5e-a551-8054d3dbf181.png", alt: "Blue Logo" },
-          { src: "/lovable-uploads/e626dc6c-506b-4b4b-89e8-3c325ec8e314.png", alt: "Owl" }
-        ].map((icon, index) => (
-          <button
-            key={index}
-            onClick={() => setShowComingSoon(true)}
-            className="bg-white p-4 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
-          >
-            <img 
-              src={icon.src} 
-              alt={icon.alt}
-              className="w-10 h-10 object-contain"
-            />
-          </button>
-        ))}
+      {/* Bottom Icons - Fixed position with higher z-index and proper spacing */}
+      <div className="fixed bottom-0 left-0 right-0 flex justify-center items-center w-full pb-8 bg-transparent z-[9999] pointer-events-none">
+        <div className="flex gap-6 pointer-events-auto">
+          {[
+            { src: "/lovable-uploads/fc2c072a-eda6-4bfb-bd3d-14a4f4eb89d4.png", alt: "Frog" },
+            { src: "/lovable-uploads/218273dc-1c20-42fc-9bf8-4d600da8c768.png", alt: "M Logo" },
+            { src: "/lovable-uploads/f3e0bce5-5786-4b5e-a551-8054d3dbf181.png", alt: "Blue Logo" },
+            { src: "/lovable-uploads/e626dc6c-506b-4b4b-89e8-3c325ec8e314.png", alt: "Owl" }
+          ].map((icon, index) => (
+            <button
+              key={index}
+              onClick={() => setShowComingSoon(true)}
+              className="bg-white p-4 rounded-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
+            >
+              <img 
+                src={icon.src} 
+                alt={icon.alt}
+                className="w-10 h-10 object-contain"
+              />
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Coming Soon Dialog */}
