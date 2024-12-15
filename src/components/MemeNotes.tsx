@@ -17,8 +17,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[0ms]",
       position: isMobile ? 
-        { top: "5%", left: "5%" } : 
-        { top: "15%", left: "5%" }
+        { top: "15%", left: "5%" } : 
+        { top: "20%", left: "10%" }
     },
     {
       text: "I take the red pill",
@@ -27,8 +27,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[200ms]",
       position: isMobile ? 
-        { top: "25%", right: "5%" } : 
-        { top: "35%", right: "8%" }
+        { top: "35%", right: "5%" } : 
+        { top: "30%", right: "15%" }
     },
     {
       text: "Duffy is degenerate af",
@@ -37,8 +37,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[400ms]",
       position: isMobile ? 
-        { bottom: "35%", left: "8%" } : 
-        { bottom: "25%", left: "12%" }
+        { bottom: "45%", left: "8%" } : 
+        { bottom: "35%", left: "18%" }
     },
     {
       text: "That's the cutest thing",
@@ -47,32 +47,32 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[600ms]",
       position: isMobile ? 
-        { bottom: "50%", right: "10%" } : 
-        { bottom: "40%", right: "15%" }
+        { bottom: "25%", right: "10%" } : 
+        { bottom: "45%", right: "20%" }
     }
   ];
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-[100]">
       {notes.map((note, index) => (
         <div
           key={index}
           className={`
             absolute transform transition-all duration-1000
             ${note.color} ${note.rotation} ${note.animation} ${note.delay}
-            p-4 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]
-            border-2 border-black
+            p-6 rounded-xl shadow-[8px_8px_0px_0px_rgba(0,0,0,0.25)]
+            border-4 border-black
             opacity-0 ${isVisible ? 'opacity-100' : ''}
-            text-black font-bold text-lg
+            text-black font-bold
             hover:scale-110 transition-transform cursor-default
             backdrop-blur-sm bg-opacity-90
-            ${isMobile ? 'max-w-[150px] text-sm' : 'max-w-[200px]'}
+            ${isMobile ? 'text-base max-w-[180px]' : 'text-xl max-w-[250px]'}
           `}
           style={{
             ...note.position,
-            zIndex: 10,
+            zIndex: 100 + index,
             transform: `${note.rotation} translateY(${index * 5}px)`,
-            boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.2)',
+            boxShadow: '8px 8px 0px rgba(0, 0, 0, 0.25)',
           }}
         >
           {note.text}
