@@ -57,7 +57,17 @@ const TokenInfo = () => {
           LIQUIDITY
         </h2>
         <p className="text-2xl sm:text-3xl font-bold text-center text-white break-words">
-          100%
+          LOCKED
+        </p>
+      </div>
+
+      <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
+        <h2 className="text-2xl font-bold mb-4 text-white"
+            style={{ letterSpacing: '2px' }}>
+          TOKEN SUPPLY
+        </h2>
+        <p className="text-2xl sm:text-3xl font-bold text-center text-white break-words">
+          1 BILLION
         </p>
       </div>
 
@@ -66,18 +76,8 @@ const TokenInfo = () => {
             style={{ letterSpacing: '2px' }}>
           CONTRACT
         </h2>
-        <p className="text-2xl sm:text-3xl font-bold text-center text-white break-words">
-          RENOUNCED
-        </p>
-      </div>
-
-      <div className="bg-white bg-opacity-20 border-4 border-black p-8 rounded-2xl transform hover:translate-y-[-8px] transition-all duration-300">
-        <h2 className="text-2xl font-bold mb-4 text-white"
-            style={{ letterSpacing: '2px' }}>
-          TAX
-        </h2>
         <p className="text-2xl sm:text-3xl font-bold text-center text-white">
-          0%
+          RENOUNCED
         </p>
       </div>
     </div>
