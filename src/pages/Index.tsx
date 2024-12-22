@@ -78,7 +78,7 @@ const Index = () => {
           {/* Buy Button */}
           <div className="relative z-20 my-8 sm:my-12">
             <a 
-              href="#"
+              href="https://dexscreener.com/solana/47hs9pp9f5thzhgkhaehfpywsz8wb1r2wrros9becgjz"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full max-w-md mx-auto block bg-green-500 hover:bg-green-600 text-white text-2xl sm:text-4xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 border-2 sm:border-4 border-black transform hover:translate-y-[-8px] shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
