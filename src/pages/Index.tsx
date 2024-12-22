@@ -4,6 +4,7 @@ import { PfpGenerator } from '@/components/PfpGenerator';
 import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
+import FutureProjects from '@/components/FutureProjects';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -11,6 +12,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#ffbd59] relative overflow-hidden p-2 sm:p-4 border-2 sm:border-4 border-black">
       <MemeNotes />
+      <FutureProjects />
       {/* Browser Frame */}
       <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-2 sm:border-4 border-black">
         <div className="bg-gray-200 p-2 rounded-t-lg border-b-2 sm:border-b-4 border-black flex items-center gap-2">
