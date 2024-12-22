@@ -60,13 +60,13 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 sm:border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <img 
-                  src="/lovable-uploads/93275f34-c3d6-4e37-bfba-50c9e5736af3.png" 
-                  alt="Duffy" 
+                  src="/lovable-uploads/cb294248-ea1d-48e6-980d-2b80f1ab9adf.png" 
+                  alt="lou" 
                   className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float"
                 />
                 <h1 className="text-4xl sm:text-7xl font-bold tracking-tight" 
                     style={{ letterSpacing: '4px' }}>
-                  DUFFY
+                  lou
                 </h1>
               </div>
             </div>

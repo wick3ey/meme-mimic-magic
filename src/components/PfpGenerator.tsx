@@ -50,8 +50,8 @@ export const PfpGenerator = () => {
         className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-lg sm:rounded-xl overflow-hidden border-2 sm:border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
-          src="/lovable-uploads/93275f34-c3d6-4e37-bfba-50c9e5736af3.png" 
-          alt="Duffy base" 
+          src="/lovable-uploads/cb294248-ea1d-48e6-980d-2b80f1ab9adf.png" 
+          alt="lou base" 
           className="w-full h-full object-cover"
         />
       </div>
