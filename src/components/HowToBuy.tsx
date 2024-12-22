@@ -50,8 +50,8 @@ const HowToBuy = () => {
         <div className="bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
           <div className="flex items-center gap-2 sm:gap-4 mb-2 sm:mb-4">
             <img 
-              src="/lovable-uploads/ce6bdae9-1aea-4bf3-b52e-7c5d9bee1bfd.png" 
-              alt="Duffy" 
+              src="/lovable-uploads/0ea059a3-2e31-4c83-89fa-f5e1cd8aa5c4.png" 
+              alt="lou" 
               className="w-6 h-6 sm:w-8 sm:h-8 rounded-full"
             />
             <h3 className="text-xl sm:text-2xl font-bold text-white">

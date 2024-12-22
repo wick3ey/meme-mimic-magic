@@ -14,17 +14,20 @@ const TokenInfo = () => {
     });
   };
 
+  const fullAddress = "5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump";
+  const shortAddress = `${fullAddress.slice(0, 4)}...${fullAddress.slice(-4)}`;
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 relative z-20">
       <Card className="p-4 sm:p-6 border-2 sm:border-4 border-black bg-[#FEF7CD] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:translate-y-[-4px] transition-all duration-300">
         <h3 className="text-lg sm:text-xl font-bold mb-2 text-black">TOKEN ADDRESS</h3>
         <div className="flex items-center gap-2">
-          <p className="text-sm break-all">B4FvDhN44LEmXa57ud1XcA4oPNFSfrotsnWwk5UMpump</p>
+          <p className="text-sm break-all">{shortAddress}</p>
           <Button 
             variant="ghost" 
             size="icon"
             className="h-8 w-8"
-            onClick={() => handleCopy("B4FvDhN44LEmXa57ud1XcA4oPNFSfrotsnWwk5UMpump")}
+            onClick={() => handleCopy(fullAddress)}
           >
             <Copy className="h-4 w-4" />
           </Button>
