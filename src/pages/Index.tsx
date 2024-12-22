@@ -132,7 +132,7 @@ const Index = () => {
             />
           </a>
           <a
-            href="https://dexscreener.com/solana/47hs9pp9f5thzhgkhaehfpywsz8wb1r2wrros9becgjz"
+            href="https://app.bubblemaps.io/sol/token/5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
