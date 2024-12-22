@@ -60,7 +60,7 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 sm:border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <img 
-                  src="/lovable-uploads/cb294248-ea1d-48e6-980d-2b80f1ab9adf.png" 
+                  src="/lovable-uploads/0ea059a3-2e31-4c83-89fa-f5e1cd8aa5c4.png" 
                   alt="lou" 
                   className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float"
                 />

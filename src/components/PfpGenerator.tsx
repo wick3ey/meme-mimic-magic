@@ -22,7 +22,7 @@ export const PfpGenerator = () => {
 
       const baseImage = new Image();
       baseImage.crossOrigin = "anonymous";
-      baseImage.src = "/lovable-uploads/f037e1a9-0059-4f84-9a1e-d4983e1fda16.png";
+      baseImage.src = "/lovable-uploads/0ea059a3-2e31-4c83-89fa-f5e1cd8aa5c4.png";
       
       baseImage.onload = () => {
         ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
@@ -50,7 +50,7 @@ export const PfpGenerator = () => {
         className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-lg sm:rounded-xl overflow-hidden border-2 sm:border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
-          src="/lovable-uploads/cb294248-ea1d-48e6-980d-2b80f1ab9adf.png" 
+          src="/lovable-uploads/0ea059a3-2e31-4c83-89fa-f5e1cd8aa5c4.png" 
           alt="lou base" 
           className="w-full h-full object-cover"
         />
