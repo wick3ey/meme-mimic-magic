@@ -30,7 +30,7 @@ const Index = () => {
         <div className="bg-[#ffbd59] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
           <div className="fixed top-2 sm:top-4 right-2 sm:right-4 flex gap-2 sm:gap-4 z-50">
             <a 
-              href="https://x.com/lou" 
+              href="https://x.com/Loucoincto" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -42,7 +42,7 @@ const Index = () => {
               />
             </a>
             <a 
-              href="https://t.me/duffythe" 
+              href="https://t.me/Loucoincto" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
