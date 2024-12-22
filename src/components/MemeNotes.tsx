@@ -48,7 +48,7 @@ const MemeNotes = () => {
         { top: "40%", right: "10%", transform: "translateZ(0)" }
     },
     {
-      text: "Duffy is degenerate af 🦦",
+      text: "lou is degenerate af 🦦",
       color: "bg-[#D3E4FD]",
       rotation: "-rotate-2",
       animation: "animate-float",

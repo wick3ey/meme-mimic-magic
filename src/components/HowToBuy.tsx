@@ -5,7 +5,7 @@ const HowToBuy = () => {
     <div className="max-w-4xl mx-auto mt-8 sm:mt-16 bg-[#1A1F2C] rounded-xl sm:rounded-2xl p-4 sm:p-8 border-2 sm:border-4 border-black">
       <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-8 text-center text-white"
           style={{ letterSpacing: '2px' }}>
-        HOW TO BUY $DUFFY
+        HOW TO BUY $lou
       </h2>
       
       <div className="space-y-4 sm:space-y-8">
@@ -22,7 +22,7 @@ const HowToBuy = () => {
             </h3>
           </div>
           <p className="text-base sm:text-lg text-white">
-            Purchase SOL from your preferred exchange (Binance, Coinbase, etc.). Make sure to buy enough to cover your desired $DUFFY purchase plus transaction fees.
+            Purchase SOL from your preferred exchange (Binance, Coinbase, etc.). Make sure to buy enough to cover your desired $lou purchase plus transaction fees.
           </p>
         </a>
 
@@ -55,11 +55,11 @@ const HowToBuy = () => {
               className="w-6 h-6 sm:w-8 sm:h-8 rounded-full"
             />
             <h3 className="text-xl sm:text-2xl font-bold text-white">
-              Step 3: Swap for $DUFFY
+              Step 3: Swap for $lou
             </h3>
           </div>
           <p className="text-base sm:text-lg text-white">
-            Open Phantom app, tap the swap feature, and either search for "$DUFFY" or paste the token address. Enter the amount of SOL you want to swap, review the transaction, and confirm!
+            Open Phantom app, tap the swap feature, and either search for "$lou" or paste the token address. Enter the amount of SOL you want to swap, review the transaction, and confirm!
           </p>
         </div>
       </div>

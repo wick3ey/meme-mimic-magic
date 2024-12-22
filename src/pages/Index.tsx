@@ -21,7 +21,7 @@ const Index = () => {
           </div>
           <div className="flex-1 mx-2 sm:mx-4">
             <div className="bg-white rounded-md p-1 text-center text-sm sm:text-base border-2 border-black">
-              duffy.xyz
+              lou.xyz
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Index = () => {
         <div className="bg-[#ffbd59] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
           <div className="fixed top-2 sm:top-4 right-2 sm:right-4 flex gap-2 sm:gap-4 z-50">
             <a 
-              href="https://x.com/duffyssol" 
+              href="https://x.com/lou" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -60,7 +60,7 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 sm:border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <img 
-                  src="/lovable-uploads/f037e1a9-0059-4f84-9a1e-d4983e1fda16.png" 
+                  src="/lovable-uploads/93275f34-c3d6-4e37-bfba-50c9e5736af3.png" 
                   alt="Duffy" 
                   className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float"
                 />
@@ -82,7 +82,7 @@ const Index = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="w-full max-w-md mx-auto block bg-green-500 hover:bg-green-600 text-white text-2xl sm:text-4xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 border-2 sm:border-4 border-black transform hover:translate-y-[-8px] shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-              BUY $DUFFY
+              BUY $lou
             </a>
           </div>
 

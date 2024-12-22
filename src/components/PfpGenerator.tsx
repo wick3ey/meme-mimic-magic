@@ -29,7 +29,7 @@ export const PfpGenerator = () => {
         
         const dataUrl = canvas.toDataURL('image/png');
         const link = document.createElement('a');
-        link.download = 'duffy-pfp.png';
+        link.download = 'lou-pfp.png';
         link.href = dataUrl;
         document.body.appendChild(link);
         link.click();
@@ -50,7 +50,7 @@ export const PfpGenerator = () => {
         className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-lg sm:rounded-xl overflow-hidden border-2 sm:border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
-          src="/lovable-uploads/f037e1a9-0059-4f84-9a1e-d4983e1fda16.png" 
+          src="/lovable-uploads/93275f34-c3d6-4e37-bfba-50c9e5736af3.png" 
           alt="Duffy base" 
           className="w-full h-full object-cover"
         />
