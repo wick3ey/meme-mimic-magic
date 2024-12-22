@@ -8,8 +8,8 @@ const WhaleWidget = () => {
   const walletAddress = "14ax4jeSv53KTHAw4oHA2CvWFrQ7ntjoSn2F2g2FEZoG";
 
   const handleCopy = async (e: React.MouseEvent | React.TouchEvent) => {
-    e.preventDefault(); // Prevent any default behavior
-    e.stopPropagation(); // Prevent event bubbling
+    e.preventDefault();
+    e.stopPropagation();
     
     try {
       await navigator.clipboard.writeText(walletAddress);
@@ -19,7 +19,6 @@ const WhaleWidget = () => {
         duration: 2000,
       });
     } catch (err) {
-      // Fallback for devices that don't support clipboard API
       const textArea = document.createElement('textarea');
       textArea.value = walletAddress;
       textArea.style.position = 'fixed';
@@ -51,10 +50,17 @@ const WhaleWidget = () => {
     }
   };
 
+  const handleButtonClick = (e: React.MouseEvent | React.TouchEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="fixed bottom-24 right-4 sm:right-8 z-50">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={handleButtonClick}
+        onTouchEnd={handleButtonClick}
         className="bg-white px-4 py-2 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300 font-bold text-black active:transform active:translate-y-0 touch-manipulation select-none"
       >
         🐋 WHALES donate
