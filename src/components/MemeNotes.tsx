@@ -11,12 +11,14 @@ const MemeNotes = () => {
       const scrollPosition = window.scrollY;
       const howToBuySection = Array.from(document.querySelectorAll('h2'))
         .find(h2 => h2.textContent?.includes('HOW TO BUY'));
+      const tokenInfoSection = document.querySelector('[data-section="token-info"]');
       
-      if (howToBuySection) {
+      if (howToBuySection && tokenInfoSection) {
         const howToBuyPosition = howToBuySection.getBoundingClientRect().top + window.scrollY;
-        setIsVisible(scrollPosition > 100 && scrollPosition < howToBuyPosition - 200);
-      } else {
-        setIsVisible(scrollPosition > 100);
+        const tokenInfoPosition = tokenInfoSection.getBoundingClientRect().top + window.scrollY;
+        
+        // Only show notes when we're between the token info section and how to buy section
+        setIsVisible(scrollPosition > tokenInfoPosition + 200 && scrollPosition < howToBuyPosition - 200);
       }
     };
 
@@ -34,8 +36,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[0ms]",
       position: isMobile ? 
-        { top: "25%", left: "5%", transform: "translateZ(0)" } : 
-        { top: "30%", left: "5%", transform: "translateZ(0)" }
+        { top: "15%", left: "5%", transform: "translateZ(0)" } : 
+        { top: "20%", left: "5%", transform: "translateZ(0)" }
     },
     {
       text: "I take the red pill 💊",
@@ -44,8 +46,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[200ms]",
       position: isMobile ? 
-        { top: "45%", right: "5%", transform: "translateZ(0)" } : 
-        { top: "40%", right: "10%", transform: "translateZ(0)" }
+        { top: "35%", right: "5%", transform: "translateZ(0)" } : 
+        { top: "30%", right: "10%", transform: "translateZ(0)" }
     },
     {
       text: "lou is degenerate af 🦦",
@@ -54,8 +56,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[400ms]",
       position: isMobile ? 
-        { top: "65%", left: "8%", transform: "translateZ(0)" } : 
-        { top: "60%", left: "15%", transform: "translateZ(0)" }
+        { top: "55%", left: "8%", transform: "translateZ(0)" } : 
+        { top: "50%", left: "15%", transform: "translateZ(0)" }
     },
     {
       text: "That's the cutest thing 🥰",
@@ -64,8 +66,8 @@ const MemeNotes = () => {
       animation: "animate-float",
       delay: "delay-[600ms]",
       position: isMobile ? 
-        { top: "85%", right: "10%", transform: "translateZ(0)" } : 
-        { top: "80%", right: "20%", transform: "translateZ(0)" }
+        { top: "75%", right: "10%", transform: "translateZ(0)" } : 
+        { top: "70%", right: "20%", transform: "translateZ(0)" }
     }
   ];
 
