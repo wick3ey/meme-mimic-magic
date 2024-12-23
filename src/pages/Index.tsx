@@ -5,6 +5,7 @@ import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
 import FutureProjects from '@/components/FutureProjects';
+import CexPartners from '@/components/CexPartners';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -92,6 +93,9 @@ const Index = () => {
           <div className="mt-8 sm:mt-16">
             <PfpGenerator />
           </div>
+
+          {/* CEX Partners Section */}
+          <CexPartners />
 
           {/* How to Buy Guide */}
           <HowToBuy />
