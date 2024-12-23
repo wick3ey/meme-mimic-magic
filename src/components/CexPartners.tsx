@@ -16,6 +16,16 @@ const CexPartners = () => {
       name: "Bitmart",
       logo: "/lovable-uploads/c35652bf-dbdc-48f3-a179-28d3a829dacd.png",
       url: "https://www.bitmart.com/trade/en-US?symbol=LOU_USDT"
+    },
+    {
+      name: "XT",
+      logo: "/lovable-uploads/123e5201-e00b-4957-a16c-b13e2ec20966.png",
+      url: "https://www.xt.com"
+    },
+    {
+      name: "KCEX",
+      logo: "/lovable-uploads/0bad1a07-f141-4729-8ad5-caa849a1af76.png",
+      url: "https://www.kcex.com"
     }
   ];
 
@@ -36,7 +46,7 @@ const CexPartners = () => {
                 <img 
                   src={partner.logo} 
                   alt={partner.name} 
-                  className={`object-contain ${partner.name === "Bitmart" ? "w-28 sm:w-36" : "h-16 sm:h-20"}`}
+                  className="h-16 sm:h-20 object-contain"
                 />
               </div>
               <div className="flex items-center gap-2">
