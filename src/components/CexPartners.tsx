@@ -20,12 +20,12 @@ const CexPartners = () => {
     {
       name: "XT",
       logo: "/lovable-uploads/123e5201-e00b-4957-a16c-b13e2ec20966.png",
-      url: "https://www.xt.com"
+      url: "https://www.xt.com/en/trade/lou_usdt"
     },
     {
       name: "KCEX",
       logo: "/lovable-uploads/0bad1a07-f141-4729-8ad5-caa849a1af76.png",
-      url: "https://www.kcex.com"
+      url: "https://www.kcex.com/exchange/LOU_USDT?_from=search"
     }
   ];
 
