@@ -15,7 +15,8 @@ const CexPartners = () => {
     {
       name: "Bitmart",
       logo: "/lovable-uploads/c35652bf-dbdc-48f3-a179-28d3a829dacd.png",
-      url: "https://www.bitmart.com/trade/en-US?symbol=LOU_USDT"
+      url: "https://www.bitmart.com/trade/en-US?symbol=LOU_USDT",
+      customSize: "h-20 sm:h-24" // Increased size for Bitmart
     },
     {
       name: "XT",
@@ -30,7 +31,8 @@ const CexPartners = () => {
     {
       name: "LBANK",
       logo: "/lovable-uploads/479fecbf-6102-41f1-bcde-195007bb78b7.png",
-      url: "https://www.lbank.com/trade/loui_usdt"
+      url: "https://www.lbank.com/trade/loui_usdt",
+      customSize: "h-20 sm:h-24" // Increased size for LBANK
     }
   ];
 
@@ -51,7 +53,7 @@ const CexPartners = () => {
                 <img 
                   src={partner.logo} 
                   alt={partner.name} 
-                  className="h-16 sm:h-20 object-contain"
+                  className={partner.customSize || "h-16 sm:h-20 object-contain"}
                 />
               </div>
               <div className="flex items-center gap-2">
