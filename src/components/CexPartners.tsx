@@ -4,17 +4,17 @@ const CexPartners = () => {
   const partners = [
     {
       name: "MEXC",
-      logo: "/lovable-uploads/92af570a-3f52-45d7-a15b-d21492910d35.png",
+      logo: "/lovable-uploads/55d47fe8-5ca9-40ac-b704-8d424098dbfb.png",
       url: "https://www.mexc.com/"
     },
     {
       name: "Gate.io",
-      logo: "/lovable-uploads/67a6faaf-2575-4041-b82d-5011400a44af.png",
+      logo: "/lovable-uploads/0beaceb6-5b6c-4289-adc3-0663386467cb.png",
       url: "https://www.gate.io/"
     },
     {
       name: "Bitmart",
-      logo: "/lovable-uploads/8a03f679-f64c-479b-a1f0-b32b0bf403bb.png",
+      logo: "/lovable-uploads/c35652bf-dbdc-48f3-a179-28d3a829dacd.png",
       url: "https://www.bitmart.com/"
     }
   ];
