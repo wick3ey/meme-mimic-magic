@@ -26,6 +26,11 @@ const CexPartners = () => {
       name: "KCEX",
       logo: "/lovable-uploads/0bad1a07-f141-4729-8ad5-caa849a1af76.png",
       url: "https://www.kcex.com/exchange/LOU_USDT?_from=search"
+    },
+    {
+      name: "LBANK",
+      logo: "/lovable-uploads/479fecbf-6102-41f1-bcde-195007bb78b7.png",
+      url: "https://www.lbank.com/trade/loui_usdt"
     }
   ];
 
