@@ -5,17 +5,17 @@ const CexPartners = () => {
     {
       name: "MEXC",
       logo: "/lovable-uploads/55d47fe8-5ca9-40ac-b704-8d424098dbfb.png",
-      url: "https://www.mexc.com/"
+      url: "https://www.mexc.com/exchange/LOU_USDT"
     },
     {
       name: "Gate.io",
       logo: "/lovable-uploads/0beaceb6-5b6c-4289-adc3-0663386467cb.png",
-      url: "https://www.gate.io/"
+      url: "https://www.gate.io/pilot/solana/lou-lou"
     },
     {
       name: "Bitmart",
       logo: "/lovable-uploads/c35652bf-dbdc-48f3-a179-28d3a829dacd.png",
-      url: "https://www.bitmart.com/"
+      url: "https://www.bitmart.com/trade/en-US?symbol=LOU_USDT"
     }
   ];
 
