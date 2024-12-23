@@ -32,11 +32,13 @@ const CexPartners = () => {
               rel="noopener noreferrer"
               className="bg-white p-4 sm:p-6 rounded-xl border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center gap-4"
             >
-              <img 
-                src={partner.logo} 
-                alt={partner.name} 
-                className="h-12 sm:h-16 object-contain"
-              />
+              <div className="w-full h-16 sm:h-20 flex items-center justify-center">
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name} 
+                  className={`object-contain ${partner.name === "Bitmart" ? "w-24 sm:w-32" : "h-12 sm:h-16"}`}
+                />
+              </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold text-lg sm:text-xl">{partner.name}</span>
                 <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
