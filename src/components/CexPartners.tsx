@@ -16,7 +16,7 @@ const CexPartners = () => {
       name: "Bitmart",
       logo: "/lovable-uploads/c35652bf-dbdc-48f3-a179-28d3a829dacd.png",
       url: "https://www.bitmart.com/trade/en-US?symbol=LOU_USDT",
-      customSize: "h-24 sm:h-32" // Further increased size for Bitmart
+      customSize: "h-32 sm:h-40" // Further increased size for Bitmart
     },
     {
       name: "XT",
