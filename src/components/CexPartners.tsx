@@ -5,33 +5,33 @@ const CexPartners = () => {
     {
       name: "MEXC",
       logo: "/lovable-uploads/55d47fe8-5ca9-40ac-b704-8d424098dbfb.png",
-      url: "https://www.mexc.com/exchange/LOU_USDT"
+      url: "https://t.me/+EgHCzueGRw1mMzJk"
     },
     {
       name: "Gate.io",
       logo: "/lovable-uploads/0beaceb6-5b6c-4289-adc3-0663386467cb.png",
-      url: "https://www.gate.io/pilot/solana/lou-lou"
+      url: "https://t.me/+EgHCzueGRw1mMzJk"
     },
     {
       name: "Bitmart",
       logo: "/lovable-uploads/c35652bf-dbdc-48f3-a179-28d3a829dacd.png",
-      url: "https://www.bitmart.com/trade/en-US?symbol=LOU_USDT",
+      url: "https://t.me/+EgHCzueGRw1mMzJk",
       customSize: "h-24 sm:h-32" // Further increased size for Bitmart
     },
     {
       name: "XT",
       logo: "/lovable-uploads/123e5201-e00b-4957-a16c-b13e2ec20966.png",
-      url: "https://www.xt.com/en/trade/lou_usdt"
+      url: "https://t.me/+EgHCzueGRw1mMzJk"
     },
     {
       name: "KCEX",
       logo: "/lovable-uploads/0bad1a07-f141-4729-8ad5-caa849a1af76.png",
-      url: "https://www.kcex.com/exchange/LOU_USDT?_from=search"
+      url: "https://t.me/+EgHCzueGRw1mMzJk"
     },
     {
       name: "LBANK",
       logo: "/lovable-uploads/479fecbf-6102-41f1-bcde-195007bb78b7.png",
-      url: "https://www.lbank.com/trade/loui_usdt",
+      url: "https://t.me/+EgHCzueGRw1mMzJk",
       customSize: "h-20 sm:h-24" // Increased size for LBANK
     }
   ];

@@ -33,7 +33,7 @@ const Index = () => {
         <div className="bg-[#ffbd59] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
           <div className="fixed top-2 sm:top-4 right-2 sm:right-4 flex gap-2 sm:gap-4 z-50">
             <a 
-              href="https://x.com/Loucoincto" 
+              href="https://t.me/+EgHCzueGRw1mMzJk" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -45,7 +45,7 @@ const Index = () => {
               />
             </a>
             <a 
-              href="https://t.me/Loucoinsol" 
+              href="https://t.me/+EgHCzueGRw1mMzJk" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -81,7 +81,7 @@ const Index = () => {
           {/* Buy Button */}
           <div className="relative z-20 my-8 sm:my-12">
             <a 
-              href="https://dexscreener.com/solana/47hs9pp9f5thzhgkhaehfpywsz8wb1r2wrros9becgjz"
+              href="https://t.me/+EgHCzueGRw1mMzJk"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full max-w-md mx-auto block bg-green-500 hover:bg-green-600 text-white text-2xl sm:text-4xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 border-2 sm:border-4 border-black transform hover:translate-y-[-8px] shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
@@ -116,7 +116,7 @@ const Index = () => {
             />
           </button>
           <a
-            href="https://app.bubblemaps.io/sol/token/5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump"
+            href="https://t.me/+EgHCzueGRw1mMzJk"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -128,7 +128,7 @@ const Index = () => {
             />
           </a>
           <a
-            href="https://www.dextools.io/app/en/token/lou?t=1734866919683"
+            href="https://t.me/+EgHCzueGRw1mMzJk"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
@@ -140,7 +140,7 @@ const Index = () => {
             />
           </a>
           <a
-            href="https://dexscreener.com/solana/47hs9pp9f5thzhgkhaehfpywsz8wb1r2wrros9becgjz"
+            href="https://t.me/+EgHCzueGRw1mMzJk"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"

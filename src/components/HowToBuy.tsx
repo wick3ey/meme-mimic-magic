@@ -10,7 +10,7 @@ const HowToBuy = () => {
       
       <div className="space-y-4 sm:space-y-8">
         <a 
-          href="https://www.binance.com"
+          href="https://t.me/+EgHCzueGRw1mMzJk"
           target="_blank"
           rel="noopener noreferrer"
           className="block bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300"
@@ -27,7 +27,7 @@ const HowToBuy = () => {
         </a>
 
         <a 
-          href="https://phantom.app"
+          href="https://t.me/+EgHCzueGRw1mMzJk"
           target="_blank"
           rel="noopener noreferrer"
           className="block bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300"
