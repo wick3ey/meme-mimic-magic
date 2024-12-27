@@ -9,12 +9,7 @@ const HowToBuy = () => {
       </h2>
       
       <div className="space-y-4 sm:space-y-8">
-        <a 
-          href="https://t.me/+EgHCzueGRw1mMzJk"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300"
-        >
+        <div className="block bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
           <div className="flex items-center gap-2 sm:gap-4 mb-2 sm:mb-4">
             <CreditCard className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             <h3 className="text-xl sm:text-2xl font-bold text-white">
@@ -24,14 +19,9 @@ const HowToBuy = () => {
           <p className="text-base sm:text-lg text-white">
             Purchase SOL from your preferred exchange (Binance, Coinbase, etc.). Make sure to buy enough to cover your desired $lou purchase plus transaction fees.
           </p>
-        </a>
+        </div>
 
-        <a 
-          href="https://t.me/+EgHCzueGRw1mMzJk"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300"
-        >
+        <div className="block bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
           <div className="flex items-center gap-2 sm:gap-4 mb-2 sm:mb-4">
             <img 
               src="/lovable-uploads/d44fc485-8fb1-4420-b06c-1371e06d90a7.png" 
@@ -45,7 +35,7 @@ const HowToBuy = () => {
           <p className="text-base sm:text-lg text-white">
             Download Phantom Wallet, create an account, and copy your wallet address. Withdraw your SOL from the exchange to your Phantom wallet address.
           </p>
-        </a>
+        </div>
 
         <div className="bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
           <div className="flex items-center gap-2 sm:gap-4 mb-2 sm:mb-4">
