@@ -10,7 +10,7 @@ const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#ffbd59] relative overflow-hidden p-2 sm:p-4 border-2 sm:border-4 border-black">
+    <div className="min-h-screen bg-[#0EA5E9] relative overflow-hidden p-2 sm:p-4 border-2 sm:border-4 border-black">
       <MemeNotes />
       {/* Browser Frame */}
       <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-2 sm:border-4 border-black">
@@ -28,7 +28,7 @@ const Index = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="bg-[#ffbd59] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
+        <div className="bg-[#0EA5E9] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
           <div className="fixed top-2 sm:top-4 right-2 sm:right-4 flex gap-2 sm:gap-4 z-50">
             <button 
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
