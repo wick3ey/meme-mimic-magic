@@ -4,6 +4,7 @@ import { PfpGenerator } from '@/components/PfpGenerator';
 import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
+import HackerTerminal from '@/components/HackerTerminal';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -88,23 +89,8 @@ const Index = () => {
             <PfpGenerator />
           </div>
 
-          {/* Coming Soon Section */}
-          <div className="max-w-5xl mx-auto mt-16 sm:mt-24 relative z-20">
-            <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-6 sm:p-8 border-2 sm:border-4 border-black">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-black">CEX</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
-                <div className="bg-white p-4 sm:p-6 rounded-xl border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-                  <div className="text-center font-bold text-lg sm:text-xl">Coming Soon</div>
-                </div>
-                <div className="bg-white p-4 sm:p-6 rounded-xl border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-                  <div className="text-center font-bold text-lg sm:text-xl">Coming Soon</div>
-                </div>
-                <div className="bg-white p-4 sm:p-6 rounded-xl border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-                  <div className="text-center font-bold text-lg sm:text-xl">Coming Soon</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Hacker Terminal Section */}
+          <HackerTerminal />
 
           {/* How to Buy Guide */}
           <HowToBuy />
