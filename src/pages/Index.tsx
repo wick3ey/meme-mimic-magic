@@ -4,7 +4,6 @@ import { PfpGenerator } from '@/components/PfpGenerator';
 import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
-import CexPartners from '@/components/CexPartners';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -22,7 +21,7 @@ const Index = () => {
           </div>
           <div className="flex-1 mx-2 sm:mx-4">
             <div className="bg-white rounded-md p-1 text-center text-sm sm:text-base border-2 border-black">
-              lou.xyz
+              peddy.xyz
             </div>
           </div>
         </div>
@@ -55,13 +54,13 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 sm:border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <img 
-                  src="/lovable-uploads/0ea059a3-2e31-4c83-89fa-f5e1cd8aa5c4.png" 
-                  alt="lou" 
+                  src="/lovable-uploads/aa9b430b-4b9e-4a38-9323-cfb7570e92ef.png" 
+                  alt="peddy" 
                   className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float"
                 />
                 <h1 className="text-4xl sm:text-7xl font-bold tracking-tight" 
                     style={{ letterSpacing: '4px' }}>
-                  lou
+                  peddy
                 </h1>
               </div>
             </div>
@@ -74,7 +73,7 @@ const Index = () => {
           <div className="relative z-20 my-8 sm:my-12">
             <button 
               className="w-full max-w-md mx-auto block bg-green-500 hover:bg-green-600 text-white text-2xl sm:text-4xl font-bold py-4 sm:py-6 px-4 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 border-2 sm:border-4 border-black transform hover:translate-y-[-8px] shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-              BUY $lou
+              BUY $peddy
             </button>
           </div>
 
@@ -83,8 +82,23 @@ const Index = () => {
             <PfpGenerator />
           </div>
 
-          {/* CEX Partners Section */}
-          <CexPartners />
+          {/* Coming Soon Section */}
+          <div className="max-w-5xl mx-auto mt-16 sm:mt-24 relative z-20">
+            <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-6 sm:p-8 border-2 sm:border-4 border-black">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-black">Coming Soon</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
+                <div className="bg-white p-4 sm:p-6 rounded-xl border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+                  <div className="text-center font-bold text-lg sm:text-xl">Coming Soon</div>
+                </div>
+                <div className="bg-white p-4 sm:p-6 rounded-xl border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+                  <div className="text-center font-bold text-lg sm:text-xl">Coming Soon</div>
+                </div>
+                <div className="bg-white p-4 sm:p-6 rounded-xl border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+                  <div className="text-center font-bold text-lg sm:text-xl">Coming Soon</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* How to Buy Guide */}
           <HowToBuy />
