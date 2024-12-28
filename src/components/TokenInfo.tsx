@@ -14,8 +14,8 @@ const TokenInfo = () => {
     });
   };
 
-  const fullAddress = "5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump";
-  const shortAddress = `${fullAddress.slice(0, 4)}...${fullAddress.slice(-4)}`;
+  const fullAddress = "xxx";
+  const shortAddress = "xxx";
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 relative z-20">
