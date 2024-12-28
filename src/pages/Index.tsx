@@ -102,67 +102,70 @@ const Index = () => {
 
           {/* How to Buy Guide */}
           <HowToBuy />
-        </div>
-      </div>
 
-      {/* Bottom Icons */}
-      <div className="fixed bottom-0 left-0 right-0 flex justify-center items-center w-full pb-4 sm:pb-8 bg-transparent z-[9999] pointer-events-none">
-        <div className="flex gap-3 sm:gap-6 pointer-events-auto">
-          <button
-            onClick={() => setShowComingSoon(true)}
-            className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
-          >
-            <img 
-              src="/lovable-uploads/fc2c072a-eda6-4bfb-bd3d-14a4f4eb89d4.png" 
-              alt="Frog"
-              className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
-            />
-          </button>
-          <button
-            className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
-          >
-            <img 
-              src="/lovable-uploads/218273dc-1c20-42fc-9bf8-4d600da8c768.png" 
-              alt="M Logo"
-              className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
-            />
-          </button>
-          <button
-            className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
-          >
-            <img 
-              src="/lovable-uploads/f3e0bce5-5786-4b5e-a551-8054d3dbf181.png" 
-              alt="Blue Logo"
-              className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
-            />
-          </button>
-          <button
-            className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
-          >
-            <img 
-              src="/lovable-uploads/e626dc6c-506b-4b4b-89e8-3c325ec8e314.png" 
-              alt="Owl"
-              className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
-            />
-          </button>
-        </div>
-      </div>
-
-      {/* Coming Soon Dialog */}
-      <Dialog open={showComingSoon} onOpenChange={setShowComingSoon}>
-        <DialogContent className="bg-white border-2 sm:border-4 border-black rounded-xl sm:rounded-2xl max-w-[90vw] sm:max-w-md">
-          <DialogHeader>
-            <DialogTitle className="text-2xl sm:text-3xl font-bold text-black text-center">
-              We are not updated yet.. stay tuned! 🚀
-            </DialogTitle>
-          </DialogHeader>
-          <div className="p-4 sm:p-6">
-            <p className="text-lg sm:text-xl text-center text-black">
-              More exciting features are coming soon to enhance your experience!
-            </p>
+          {/* Bottom Icons */}
+          <div className="fixed bottom-0 left-0 right-0 flex justify-center items-center w-full pb-4 sm:pb-8 bg-transparent z-[9999] pointer-events-none">
+            <div className="flex gap-3 sm:gap-6 pointer-events-auto">
+              <button
+                onClick={() => setShowComingSoon(true)}
+                className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
+              >
+                <img 
+                  src="/lovable-uploads/fc2c072a-eda6-4bfb-bd3d-14a4f4eb89d4.png" 
+                  alt="Frog"
+                  className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
+                />
+              </button>
+              <button
+                onClick={() => setShowComingSoon(true)}
+                className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
+              >
+                <img 
+                  src="/lovable-uploads/218273dc-1c20-42fc-9bf8-4d600da8c768.png" 
+                  alt="M Logo"
+                  className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
+                />
+              </button>
+              <button
+                onClick={() => setShowComingSoon(true)}
+                className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
+              >
+                <img 
+                  src="/lovable-uploads/f3e0bce5-5786-4b5e-a551-8054d3dbf181.png" 
+                  alt="Blue Logo"
+                  className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
+                />
+              </button>
+              <button
+                onClick={() => setShowComingSoon(true)}
+                className="bg-white p-2 sm:p-4 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
+              >
+                <img 
+                  src="/lovable-uploads/e626dc6c-506b-4b4b-89e8-3c325ec8e314.png" 
+                  alt="Owl"
+                  className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
+                />
+              </button>
+            </div>
           </div>
-        </DialogContent>
-      </Dialog>
+
+          {/* Coming Soon Dialog */}
+          <Dialog open={showComingSoon} onOpenChange={setShowComingSoon}>
+            <DialogContent className="bg-white border-2 sm:border-4 border-black rounded-xl sm:rounded-2xl max-w-[90vw] sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle className="text-2xl sm:text-3xl font-bold text-black text-center">
+                  We are not updated yet.. stay tuned! 🚀
+                </DialogTitle>
+              </DialogHeader>
+              <div className="p-4 sm:p-6">
+                <p className="text-lg sm:text-xl text-center text-black">
+                  More exciting features are coming soon to enhance your experience!
+                </p>
+              </div>
+            </DialogContent>
+          </Dialog>
+        </div>
+      </div>
     </div>
   );
 };
