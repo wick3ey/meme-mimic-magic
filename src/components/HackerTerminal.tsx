@@ -55,14 +55,14 @@ const HackerTerminal = () => {
   }, [currentMessageIndex]);
 
   return (
-    <div className="max-w-5xl mx-auto mt-16 sm:mt-24 relative z-20">
-      <div className="bg-black bg-opacity-90 rounded-xl sm:rounded-2xl p-6 sm:p-8 border-2 sm:border-4 border-[#00ff00]">
+    <div className="max-w-5xl mx-auto mt-8 sm:mt-16 relative z-20">
+      <div className="bg-black bg-opacity-90 rounded-xl sm:rounded-2xl p-4 sm:p-8 border-2 sm:border-4 border-[#00ff00]">
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500"></div>
+          <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-yellow-500"></div>
+          <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500"></div>
         </div>
-        <div className="font-mono text-[#00ff00] whitespace-pre-wrap min-h-[200px] sm:min-h-[250px]">
+        <div className="font-mono text-[#00ff00] whitespace-pre-wrap min-h-[150px] sm:min-h-[200px] text-sm sm:text-base">
           <div className="animate-pulse mb-4">root@peddy:~#</div>
           <div className="typing-text">
             {displayedText}
