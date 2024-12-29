@@ -5,7 +5,6 @@ import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
 import HackerTerminal from '@/components/HackerTerminal';
-import { AnimatedWidget } from '@/components/AnimatedWidget';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -169,9 +168,6 @@ const Index = () => {
           </Dialog>
         </div>
       </div>
-
-      {/* Add the AnimatedWidget component */}
-      <AnimatedWidget />
     </div>
   );
 };
