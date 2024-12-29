@@ -12,6 +12,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#0EA5E9] relative overflow-hidden p-2 sm:p-4 border-2 sm:border-4 border-black">
       <MemeNotes />
+      
+      {/* Scrolling Banner */}
+      <div className="w-full overflow-hidden bg-black py-2 border-y-2 border-black">
+        <div className="animate-scroll whitespace-nowrap inline-block">
+          {[...Array(20)].map((_, i) => (
+            <span key={i} className="text-white text-2xl sm:text-4xl font-bold px-4">$PEDDY</span>
+          ))}
+        </div>
+      </div>
+
       {/* Browser Frame */}
       <div className="max-w-6xl mx-auto bg-white rounded-t-lg shadow-2xl border-2 sm:border-4 border-black">
         <div className="bg-gray-200 p-2 sm:p-3 rounded-t-lg border-b-2 sm:border-b-4 border-black flex items-center gap-2">
