@@ -22,7 +22,7 @@ export const PfpGenerator = () => {
 
       const baseImage = new Image();
       baseImage.crossOrigin = "anonymous";
-      baseImage.src = "/lovable-uploads/16db9404-972b-46bf-b1e1-f0c9356af92e.png";
+      baseImage.src = "/lovable-uploads/86b434ad-2315-40ef-ad99-853057a334df.png";
       
       baseImage.onload = () => {
         ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
@@ -50,7 +50,7 @@ export const PfpGenerator = () => {
         className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-lg sm:rounded-xl overflow-hidden border-2 sm:border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
-          src="/lovable-uploads/16db9404-972b-46bf-b1e1-f0c9356af92e.png" 
+          src="/lovable-uploads/86b434ad-2315-40ef-ad99-853057a334df.png" 
           alt="peddy base" 
           className="w-full h-full object-cover"
         />
