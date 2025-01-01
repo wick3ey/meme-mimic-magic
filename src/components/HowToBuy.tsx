@@ -40,7 +40,7 @@ const HowToBuy = () => {
         <div className="bg-[#222222] rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 sm:border-4 border-black hover:transform hover:scale-105 transition-all duration-300">
           <div className="flex items-center gap-2 sm:gap-4 mb-2 sm:mb-4">
             <img 
-              src="/lovable-uploads/aa9b430b-4b9e-4a38-9323-cfb7570e92ef.png" 
+              src="/lovable-uploads/86b434ad-2315-40ef-ad99-853057a334df.png" 
               alt="peddy" 
               className="w-5 h-5 sm:w-8 sm:h-8 rounded-full"
             />
