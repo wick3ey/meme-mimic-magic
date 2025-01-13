@@ -10,7 +10,7 @@ const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0EA5E9] relative overflow-hidden p-2 sm:p-4 border-2 sm:border-4 border-black">
+    <div className="min-h-screen bg-[#E5DED3] relative overflow-hidden p-2 sm:p-4 border-2 sm:border-4 border-black">
       <MemeNotes />
       
       {/* Scrolling Banner */}
@@ -38,7 +38,7 @@ const Index = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="bg-[#0EA5E9] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
+        <div className="bg-[#E5DED3] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
           <div className="fixed top-2 sm:top-4 right-2 sm:right-4 flex gap-2 sm:gap-4 z-50">
             <a 
               href="https://x.com/peddysol"
@@ -75,7 +75,7 @@ const Index = () => {
                   alt="trakr" 
                   className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float object-cover"
                 />
-                <h1 className="text-4xl sm:text-7xl font-bold tracking-tight" 
+                <h1 className="text-4xl sm:text-7xl font-bold tracking-tight text-black" 
                     style={{ letterSpacing: '4px' }}>
                   TRAKR
                 </h1>
