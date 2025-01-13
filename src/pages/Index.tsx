@@ -71,8 +71,8 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 sm:border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <img 
-                  src="/lovable-uploads/86b434ad-2315-40ef-ad99-853057a334df.png" 
-                  alt="peddy" 
+                  src="/lovable-uploads/0beaceb6-5b6c-4289-adc3-0663386467cb.png" 
+                  alt="trakr" 
                   className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float"
                 />
                 <h1 className="text-4xl sm:text-7xl font-bold tracking-tight" 
@@ -105,7 +105,6 @@ const Index = () => {
           {/* How to Buy Guide */}
           <HowToBuy />
 
-          {/* Bottom Icons */}
           <div className="fixed bottom-0 left-0 right-0 flex justify-center items-center w-full pb-4 sm:pb-8 bg-transparent z-[9999] pointer-events-none">
             <div className="flex gap-3 sm:gap-6 pointer-events-auto">
               <button
