@@ -71,7 +71,7 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 sm:border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <img 
-                  src="/lovable-uploads/0beaceb6-5b6c-4289-adc3-0663386467cb.png" 
+                  src="/lovable-uploads/f938471c-6236-4abc-bab8-30a4d509f877.png" 
                   alt="trakr" 
                   className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float"
                 />
