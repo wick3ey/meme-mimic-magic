@@ -32,7 +32,7 @@ const Index = () => {
           </div>
           <div className="flex-1 mx-2 sm:mx-4">
             <div className="bg-white rounded-md p-1 text-center text-xs sm:text-base border-2 border-black">
-              trakr.xyz
+              trakrthedog.xyz
             </div>
           </div>
         </div>
