@@ -5,7 +5,6 @@ import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
 import TrakrHistory from '@/components/TrakrHistory';
-import TrakrBackground from '@/components/TrakrBackground';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -33,7 +32,7 @@ const Index = () => {
           </div>
           <div className="flex-1 mx-2 sm:mx-4">
             <div className="bg-white rounded-md p-1 text-center text-xs sm:text-base border-2 border-black">
-              trakrthedog.xyz
+              trakr.xyz
             </div>
           </div>
         </div>
@@ -92,9 +91,7 @@ const Index = () => {
           {/* Trakr History Section */}
           <TrakrHistory />
 
-          {/* Trakr Background Section */}
-          <TrakrBackground />
-
+          {/* PFP Generator Section */}
           <div className="mt-8 sm:mt-16">
             <PfpGenerator />
           </div>
