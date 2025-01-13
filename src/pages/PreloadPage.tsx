@@ -14,7 +14,7 @@ const PreloadPage = () => {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen bg-[#E5DED3] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#1A1F2C] flex items-center justify-center p-4">
       <div className="w-full max-w-4xl">
         <HackerTerminal />
       </div>
