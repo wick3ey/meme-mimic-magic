@@ -5,6 +5,7 @@ import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
 import TrakrHistory from '@/components/TrakrHistory';
+import TrakrBackground from '@/components/TrakrBackground';
 import { motion } from "framer-motion";
 
 const Index = () => {
@@ -126,7 +127,7 @@ const Index = () => {
             </motion.button>
           </motion.div>
 
-          {/* History and Other Sections */}
+          {/* History Section */}
           <motion.div {...fadeInUp}>
             <TrakrHistory />
           </motion.div>
@@ -144,7 +145,12 @@ const Index = () => {
             <HowToBuy />
           </motion.div>
 
-          {/* Enhanced Footer Buttons */}
+          {/* New Background Section */}
+          <motion.div {...fadeInUp}>
+            <TrakrBackground />
+          </motion.div>
+
+          {/* Footer Buttons and Dialog */}
           <div className="fixed bottom-0 left-0 right-0 flex justify-center items-center w-full pb-4 sm:pb-8 bg-transparent z-[9999] pointer-events-none">
             <div className="flex gap-3 sm:gap-6 pointer-events-auto">
               {[
