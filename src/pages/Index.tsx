@@ -71,9 +71,9 @@ const Index = () => {
             <div className="bg-white bg-opacity-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 sm:border-4 border-black">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <img 
-                  src="/lovable-uploads/0bad1a07-f141-4729-8ad5-caa849a1af76.png" 
+                  src="/lovable-uploads/5d4fa89e-9355-435b-be11-ef9723480b92.png" 
                   alt="trakr" 
-                  className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float"
+                  className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 sm:border-4 border-black subtle-float object-cover"
                 />
                 <h1 className="text-4xl sm:text-7xl font-bold tracking-tight" 
                     style={{ letterSpacing: '4px' }}>
