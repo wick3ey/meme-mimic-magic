@@ -8,6 +8,7 @@
   src: url('/lovable-uploads/e2e6f4c2-6f0d-45af-ae91-3616a308351b.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @layer base {
@@ -38,18 +39,67 @@
     @apply font-['Hitchcut'];
   }
 
+  /* Enhanced responsive base styles */
+  html {
+    @apply text-base antialiased;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
   body {
-    @apply bg-[#E5DED3] text-black font-['Hitchcut'];
+    @apply bg-[#E5DED3] text-black font-['Hitchcut'] min-h-screen;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-['Hitchcut'] font-bold;
+    @apply font-['Hitchcut'] font-bold tracking-wide;
     letter-spacing: 2px;
     color: white;
   }
 
+  /* Responsive typography */
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl; }
+  h2 { @apply text-3xl md:text-4xl lg:text-5xl; }
+  h3 { @apply text-2xl md:text-3xl lg:text-4xl; }
+  h4 { @apply text-xl md:text-2xl lg:text-3xl; }
+  h5 { @apply text-lg md:text-xl lg:text-2xl; }
+  h6 { @apply text-base md:text-lg lg:text-xl; }
+
   button {
     @apply font-['Hitchcut'] font-bold;
+    touch-action: manipulation;
+  }
+
+  /* Enhanced focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+  }
+
+  /* Better touch targets on mobile */
+  @media (max-width: 768px) {
+    button, a {
+      @apply min-h-[44px] min-w-[44px];
+    }
+  }
+
+  /* Improved scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-full;
+  }
+
+  /* Prevent text selection on interactive elements */
+  button, a {
+    @apply select-none;
   }
 }
 
@@ -64,4 +114,26 @@
 
 .animate-scroll {
   animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+/* Enhanced media query breakpoints */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  @supports (height: 100dvh) {
+    .h-screen {
+      height: 100dvh;
+    }
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
 }
