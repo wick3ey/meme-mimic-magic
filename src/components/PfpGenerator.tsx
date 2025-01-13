@@ -22,14 +22,14 @@ export const PfpGenerator = () => {
 
       const baseImage = new Image();
       baseImage.crossOrigin = "anonymous";
-      baseImage.src = "/lovable-uploads/86b434ad-2315-40ef-ad99-853057a334df.png";
+      baseImage.src = "/lovable-uploads/6293795d-cc8a-48bf-887b-ef864f87c142.png";
       
       baseImage.onload = () => {
         ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
         
         const dataUrl = canvas.toDataURL('image/png');
         const link = document.createElement('a');
-        link.download = 'peddy-pfp.png';
+        link.download = 'trakr-pfp.png';
         link.href = dataUrl;
         document.body.appendChild(link);
         link.click();
@@ -50,8 +50,8 @@ export const PfpGenerator = () => {
         className="relative w-full aspect-square bg-[#DC2626] bg-opacity-10 rounded-lg sm:rounded-xl overflow-hidden border-2 sm:border-4 border-[#DC2626] shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] hover:scale-105 transition-transform duration-300"
       >
         <img 
-          src="/lovable-uploads/86b434ad-2315-40ef-ad99-853057a334df.png" 
-          alt="peddy base" 
+          src="/lovable-uploads/6293795d-cc8a-48bf-887b-ef864f87c142.png" 
+          alt="trakr base" 
           className="w-full h-full object-cover"
         />
       </div>

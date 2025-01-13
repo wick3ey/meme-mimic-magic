@@ -5,26 +5,26 @@ const HackerTerminal = () => {
   const [displayedText, setDisplayedText] = useState('');
 
   const messages = [
-    "$ INITIALIZING PEDDY PROTOCOL...",
-    "$ PEDDY: The most revolutionary meme token on Solana",
-    "$ ANALYSIS: PEDDY's community growth exceeds expectations",
-    "$ WARNING: PEDDY holders experiencing extreme gains",
-    "$ DETECTED: Massive viral potential in PEDDY's meme power",
-    "$ ALERT: PEDDY's marketing strategy is unmatched",
+    "$ INITIALIZING TRAKR PROTOCOL...",
+    "$ TRAKR: The most revolutionary meme token on Solana",
+    "$ ANALYSIS: TRAKR's community growth exceeds expectations",
+    "$ WARNING: TRAKR holders experiencing extreme gains",
+    "$ DETECTED: Massive viral potential in TRAKR's meme power",
+    "$ ALERT: TRAKR's marketing strategy is unmatched",
     "$ SCANNING: Multiple exchange listings incoming",
-    "$ CONFIRMED: PEDDY is the next big thing on Solana",
-    "$ PREDICTION: PEDDY to reach new ATH soon",
-    "$ VERIFIED: Strong diamond hands in PEDDY community",
-    "$ CALCULATING: PEDDY's meme supremacy confirmed",
-    "$ UPDATE: PEDDY's social engagement skyrocketing",
+    "$ CONFIRMED: TRAKR is the next big thing on Solana",
+    "$ PREDICTION: TRAKR to reach new ATH soon",
+    "$ VERIFIED: Strong diamond hands in TRAKR community",
+    "$ CALCULATING: TRAKR's meme supremacy confirmed",
+    "$ UPDATE: TRAKR's social engagement skyrocketing",
     "$ NOTICE: Unprecedented buying pressure detected",
-    "$ SYSTEM: PEDDY's tokenomics are revolutionary",
-    "$ ALERT: Major influencers discovering PEDDY",
+    "$ SYSTEM: TRAKR's tokenomics are revolutionary",
+    "$ ALERT: Major influencers discovering TRAKR",
     "$ WARNING: FOMO levels reaching critical mass",
-    "$ ANALYSIS: PEDDY's growth trajectory is parabolic",
-    "$ DETECTED: Massive whale accumulation of PEDDY",
-    "$ CONFIRMED: PEDDY is the most viral SOL token",
-    "$ FINAL: PEDDY to the moon... initialization complete"
+    "$ ANALYSIS: TRAKR's growth trajectory is parabolic",
+    "$ DETECTED: Massive whale accumulation of TRAKR",
+    "$ CONFIRMED: TRAKR is the most viral SOL token",
+    "$ FINAL: TRAKR to the moon... initialization complete"
   ];
 
   useEffect(() => {
