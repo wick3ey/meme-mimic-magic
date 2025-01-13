@@ -11,6 +11,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-[#1A1F2C] relative overflow-hidden p-2 sm:p-4">
+      {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('/lovable-uploads/92af570a-3f52-45d7-a15b-d21492910d35.png')] opacity-5"></div>
       
       <MemeNotes />
