@@ -40,10 +40,7 @@ const Index = () => {
         {/* Main Content Area */}
         <div className="bg-[#E5DED3] p-4 sm:p-8 min-h-[calc(100vh-4rem)] rounded-b-lg border-t-2 sm:border-t-4 border-black relative">
           <div className="fixed top-2 sm:top-4 right-2 sm:right-4 flex gap-2 sm:gap-4 z-50">
-            <a 
-              href="https://x.com/peddysol"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button 
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
             >
               <img 
@@ -51,11 +48,8 @@ const Index = () => {
                 alt="Twitter" 
                 className="w-6 h-6 sm:w-8 sm:h-8"
               />
-            </a>
-            <a 
-              href="https://t.me/peddysol"
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button 
               className="bg-white p-2 sm:p-3 rounded-full border-2 sm:border-4 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:transform hover:translate-y-[-4px] transition-all duration-300"
             >
               <img 
@@ -63,7 +57,7 @@ const Index = () => {
                 alt="Telegram" 
                 className="w-6 h-6 sm:w-8 sm:h-8"
               />
-            </a>
+            </button>
           </div>
 
           {/* Header Section */}
