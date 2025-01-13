@@ -5,7 +5,7 @@ const HowToBuy = () => {
     <div className="max-w-4xl mx-auto mt-8 sm:mt-16 bg-[#1A1F2C] rounded-xl sm:rounded-2xl p-4 sm:p-8 border-2 sm:border-4 border-black">
       <h2 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8 text-center text-white"
           style={{ letterSpacing: '2px' }}>
-        HOW TO BUY $trakr
+        HOW TO BUY $TRAKR
       </h2>
       
       <div className="space-y-4 sm:space-y-8">

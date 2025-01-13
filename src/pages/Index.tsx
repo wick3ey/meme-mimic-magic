@@ -17,7 +17,7 @@ const Index = () => {
       <div className="w-full overflow-hidden bg-black py-2 border-y-2 border-black">
         <div className="animate-scroll whitespace-nowrap inline-block">
           {[...Array(20)].map((_, i) => (
-            <span key={i} className="text-white text-2xl sm:text-4xl font-bold px-4">$PEDDY</span>
+            <span key={i} className="text-white text-2xl sm:text-4xl font-bold px-4">$TRAKR</span>
           ))}
         </div>
       </div>
@@ -32,7 +32,7 @@ const Index = () => {
           </div>
           <div className="flex-1 mx-2 sm:mx-4">
             <div className="bg-white rounded-md p-1 text-center text-xs sm:text-base border-2 border-black">
-              peddy.xyz
+              trakr.xyz
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const Index = () => {
                 />
                 <h1 className="text-4xl sm:text-7xl font-bold tracking-tight" 
                     style={{ letterSpacing: '4px' }}>
-                  peddy
+                  TRAKR
                 </h1>
               </div>
             </div>
@@ -90,7 +90,7 @@ const Index = () => {
           <div className="relative z-20 my-8 sm:my-12">
             <button 
               className="w-full max-w-md mx-auto block bg-green-500 hover:bg-green-600 text-white text-xl sm:text-4xl font-bold py-3 sm:py-6 px-4 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 border-2 sm:border-4 border-black transform hover:translate-y-[-8px] shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-              BUY $peddy
+              BUY $TRAKR
             </button>
           </div>
 
