@@ -5,6 +5,7 @@ import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
 import TrakrHistory from '@/components/TrakrHistory';
+import TrakrBackground from '@/components/TrakrBackground';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -91,7 +92,9 @@ const Index = () => {
           {/* Trakr History Section */}
           <TrakrHistory />
 
-          {/* PFP Generator Section */}
+          {/* Trakr Background Section */}
+          <TrakrBackground />
+
           <div className="mt-8 sm:mt-16">
             <PfpGenerator />
           </div>
