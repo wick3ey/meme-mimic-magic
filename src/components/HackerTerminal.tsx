@@ -63,7 +63,7 @@ const HackerTerminal = () => {
           <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500"></div>
         </div>
         <div className="font-mono text-[#00ff00] whitespace-pre-wrap min-h-[150px] sm:min-h-[200px] text-sm sm:text-base">
-          <div className="animate-pulse mb-4">root@peddy:~#</div>
+          <div className="animate-pulse mb-4">root@trakr:~#</div>
           <div className="typing-text">
             {displayedText}
             <span className="animate-pulse">_</span>

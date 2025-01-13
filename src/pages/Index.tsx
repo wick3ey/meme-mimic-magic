@@ -4,7 +4,6 @@ import { PfpGenerator } from '@/components/PfpGenerator';
 import TokenInfo from '@/components/TokenInfo';
 import HowToBuy from '@/components/HowToBuy';
 import MemeNotes from '@/components/MemeNotes';
-import HackerTerminal from '@/components/HackerTerminal';
 
 const Index = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -98,9 +97,6 @@ const Index = () => {
           <div className="mt-8 sm:mt-16">
             <PfpGenerator />
           </div>
-
-          {/* Hacker Terminal Section */}
-          <HackerTerminal />
 
           {/* How to Buy Guide */}
           <HowToBuy />
