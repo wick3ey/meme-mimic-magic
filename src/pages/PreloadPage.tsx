@@ -8,7 +8,7 @@ const PreloadPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/home');
-    }, 20000); // Increased time to allow for more messages
+    }, 3000); // Changed from 20000 to 3000 milliseconds (3 seconds)
 
     return () => clearTimeout(timer);
   }, [navigate]);
